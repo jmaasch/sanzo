@@ -1,0 +1,411 @@
+---
+title: "sanzo rought draft"
+author: "Jacqueline Maasch"
+date: "12/17/2019"
+output: html_document
+---
+
+```{r data}
+
+# Use in-built datasets.
+data("iris")
+data("mtcars")
+data("ChickWeight")
+data("chickwts")
+data("airquality")
+
+```
+
+## Palette definitions.
+
+```{r palettes}
+
+sanzoDuos <- list(
+  c006 = c("#ff616b", "#000831"),
+  c007 = c("#ff5200", "#b3e8c2"),
+  c008 = c("#c2612c", "#b8b8ff"),
+  c033 = c("#b85e00", "#1b3644"),
+  c035 = c("#b08699", "#a10b2b"),
+  c047 = c("#c9303e", "#bfabcc"),
+  c070 = c("#b85e00", "#405416"),
+  c071 = c("#a90636", "#d99e73"),
+  c074 = c("#b5ffc2", "#2dbc94"),
+  c079 = c("#651300", "#2dbc94"),
+  c085 = c("#c74300", "#008aa1"),
+  c091 = c("#5c2c45", "#c05200"),
+  c095 = c("#681916", "#06004f"),
+  c102 = c("#ebd999", "#c05200"),
+  c103 = c("#c2612c", "#2d0060"),
+  c106 = c("#008aa1", "#06004f"),
+  c114 = c("#ffab00", "#008aa1"),
+  c118 = c("#e0b81f", "#362304"),
+  c119 = c("#a6e6db", "#0d2b52"),
+  c229 = c("#172713", "#b5d1cc")
+)
+
+sanzoTrios <- list(
+  c121 = c("#6c2b11", "#d99e73", "#405416"),
+  c139 = c("#96bfe6", "#000831", "#b5d1cc"),
+  c142 = c("#9e194d", "#baa600", "#96bfe6"),
+  c148 = c("#d1bd19", "#ffab00", "#29bdad"),
+  c149 = c("#d1bd19", "#ff5200", "#0f261f"),
+  c157 = c("#6f0043", "#d1bd19", "#4f8fe6"),
+  c163 = c("#ffe600", "#b5ffc2", "#008aa1"),
+  c171 = c("#730f1f", "#ff8c00", "#b3e8c2"),
+  c172 = c("#c2612c", "#008aa1", "#3400a3"),
+  c174 = c("#ffa6d9", "#bfabcc", "#6b2e63"),
+  c194 = c("#fa2b00", "#ffcfc4", "#4f8fe6"),
+  c204 = c("#b319ab", "#c2612c", "#a6e6db"),
+  c205 = c("#730f1f", "#f59994", "#2619d1"),
+  c207 = c("#9b5348", "#b3e8c2", "#000000"),
+  c223 = c("#b08699", "#d99e73", "#b5ffc2"),
+  c226 = c("#5c2c45", "#ffb852", "#2619d1"),
+  c232 = c("#d60036", "#f2ad78", "#000831"),
+  c239 = c("#b08699", "#c4bf33", "#b3e8c2"),
+  c240 = c("#ff788c", "#ffff00", "#29bdad"),
+  c343 = c("#a93400", "#ebd999", "#505423")
+)
+
+sanzoQuads <- list(
+  c249 = c("#681916", "#c0b490", "#d1bd19", "#417777"),
+  c252 = c("#e62e73", "#b85e00", "#baa600", "#2dbc94"),
+  c263 = c("#a93400", "#f2ad78", "#b5ffc2", "#1b3644"),
+  c268 = c("#b08699", "#b85e00", "#172713", "#bfffe6"),
+  c271 = c("#b90078", "#94ff94", "#2dbc94", "#0f261f"),
+  c273 = c("#ffb3f0", "#6f0043", "#9b5348", "#b5d1cc"),
+  c279 = c("#b85e00", "#f59994", "#c0b490", "#0d2b52"),
+  c283 = c("#a7374b", "#730f1f", "#85b857", "#6bffb3"),
+  c289 = c("#f2ff26", "#bdf226", "#202d85", "#06004f"),
+  c293 = c("#b85e00", "#b5ffc2", "#65a98f", "#40c945"),
+  c296 = c("#f5f5b8", "#d99e73", "#5e4017", "#1b3644"),
+  c302 = c("#ffb852", "#c0b490", "#bfffe6", "#008aa1"),
+  c310 = c("#f5f5b8", "#f2ad78", "#718600", "#172713"),
+  c321 = c("#b08699", "#f5f5b8", "#172713", "#96bfe6"),
+  c329 = c("#ffb852", "#bfabcc", "#340059", "#1b3644"),
+  c330 = c("#bcd382", "#bfffe6", "#96bfe6", "#2dbc94"),
+  c332 = c("#ff7399", "#d50c42", "#172713", "#00592e"),
+  c339 = c("#d99e73", "#de4500", "#a6e6db", "#202d85"),
+  c341 = c("#ff616b", "#328e13", "#172713", "#a6e6db"),
+  c348 = c("#bcd382", "#328e13", "#172713", "#340059")
+)
+
+```
+
+# Functions.
+
+```{r functions}
+
+# Generate two-toned palette from sanzoDuos.
+wadaDuo <- function(paletteName) {
+  palette <- sanzoDuos[[paletteName]]
+}
+
+# Generate three-toned palette from sanzoTrios.
+wadaTrio <- function(paletteName) {
+  palette <- sanzoTrios[[paletteName]]
+}
+
+# Generate four-toned palette from sanzoQuads.
+wadaQuad <- function(paletteName) {
+  palette <- sanzoQuads[[paletteName]]
+}
+
+# Print plots using color palette as a demo.
+# @param palette = palette name
+# @param n = number of colors in the palette
+demo <- function(palette, n) {
+  
+}
+
+# Print demos for all palettes in package.
+demoAll <- function() {
+  
+}
+
+# Print information associated with palette.
+# Hexadecimals
+# Color names
+# Palette name in Sanzo Wada site
+info <- function(paletteName) {
+  
+}
+
+```
+
+# Demo duos.
+
+```{r demoDuos}
+
+c006 <- wadaDuo("c006")
+c007 <- wadaDuo("c007")
+c008 <- wadaDuo("c008")
+c033 <- wadaDuo("c033")
+c035 <- wadaDuo("c035")
+c047 <- wadaDuo("c047")
+c070 <- wadaDuo("c070")
+c071 <- wadaDuo("c071")
+c074 <- wadaDuo("c074")
+c079 <- wadaDuo("c079")
+c085 <- wadaDuo("c085")
+c091 <- wadaDuo("c091")
+c095 <- wadaDuo("c095")
+c102 <- wadaDuo("c102")
+c103 <- wadaDuo("c103")
+c106 <- wadaDuo("c106")
+c114 <- wadaDuo("c114")
+c118 <- wadaDuo("c118")
+c119 <- wadaDuo("c119")
+c229 <- wadaDuo("c229")
+
+layout(matrix(1:4, nrow = 2))
+par(mar = c(2, 2, 2, 2))
+
+barplot(mtcars$mpg, col = c006, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Petal.Width, pch = 18:19, col = c006 [unclass(iris$Species)], ann = FALSE)
+
+barplot(mtcars$mpg, col = c007, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Petal.Width, pch = 18:19, col = c007 [unclass(iris$Species)], ann = FALSE)
+
+barplot(mtcars$mpg, col = c008, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Petal.Width, pch = 18:19, col = c008 [unclass(iris$Species)], ann = FALSE)
+
+barplot(mtcars$mpg, col = c033, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Petal.Width, pch = 18:19, col = c033 [unclass(iris$Species)], ann = FALSE)
+
+barplot(mtcars$mpg, col = c035, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Petal.Width, pch = 18:19, col = c035 [unclass(iris$Species)], ann = FALSE)
+
+barplot(mtcars$mpg, col = c047, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Petal.Width, pch = 18:19, col = c047 [unclass(iris$Species)], ann = FALSE)
+
+barplot(mtcars$mpg, col = c070, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Petal.Width, pch = 18:19, col = c070 [unclass(iris$Species)], ann = FALSE)
+
+barplot(mtcars$mpg, col = c071, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Petal.Width, pch = 18:19, col = c071 [unclass(iris$Species)], ann = FALSE)
+
+barplot(mtcars$mpg, col = c074, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Petal.Width, pch = 18:19, col = c074 [unclass(iris$Species)], ann = FALSE)
+
+barplot(mtcars$mpg, col = c079, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Petal.Width, pch = 18:19, col = c079 [unclass(iris$Species)], ann = FALSE)
+
+barplot(mtcars$mpg, col = c085, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Petal.Width, pch = 18:19, col = c085 [unclass(iris$Species)], ann = FALSE)
+
+barplot(mtcars$mpg, col = c091, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Petal.Width, pch = 18:19, col = c091 [unclass(iris$Species)], ann = FALSE)
+
+barplot(mtcars$mpg, col = c095, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Petal.Width, pch = 18:19, col = c095 [unclass(iris$Species)], ann = FALSE)
+
+barplot(mtcars$mpg, col = c102, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Petal.Width, pch = 18:19, col = c102 [unclass(iris$Species)], ann = FALSE)
+
+barplot(mtcars$mpg, col = c103, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Petal.Width, pch = 18:19, col = c103 [unclass(iris$Species)], ann = FALSE)
+
+barplot(mtcars$mpg, col = c106, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Petal.Width, pch = 18:19, col = c106 [unclass(iris$Species)], ann = FALSE)
+
+barplot(mtcars$mpg, col = c114, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Petal.Width, pch = 18:19, col = c114 [unclass(iris$Species)], ann = FALSE)
+
+barplot(mtcars$mpg, col = c118, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Petal.Width, pch = 18:19, col = c118 [unclass(iris$Species)], ann = FALSE)
+
+barplot(mtcars$mpg, col = c119, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Petal.Width, pch = 18:19, col = c119 [unclass(iris$Species)], ann = FALSE)
+
+barplot(mtcars$mpg, col = c229, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Petal.Width, pch = 18:19, col = c229 [unclass(iris$Species)], ann = FALSE)
+
+```
+
+# Demo trios.
+
+```{r demoTrios}
+c121 <- wadaTrio("c121")
+c139 <- wadaTrio("c139")
+c142 <- wadaTrio("c142")
+c148 <- wadaTrio("c148")
+c149 <- wadaTrio("c149")
+c157 <- wadaTrio("c157")
+c163 <- wadaTrio("c163")
+c171 <- wadaTrio("c171")
+c172 <- wadaTrio("c172")
+c174 <- wadaTrio("c174")
+c194 <- wadaTrio("c194")
+c204 <- wadaTrio("c204")
+c205 <- wadaTrio("c205")
+c207 <- wadaTrio("c207")
+c223 <- wadaTrio("c223")
+c226 <- wadaTrio("c226")
+c232 <- wadaTrio("c232")
+c239 <- wadaTrio("c239")
+c240 <- wadaTrio("c240")
+c343 <- wadaTrio("c343")
+
+layout(matrix(1:4, nrow = 2))
+par(mar = c(2, 2, 2, 2))
+
+barplot(mtcars$mpg, col = c121, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Petal.Width, pch = 18:20, col = c121 [unclass(iris$Species)], ann = FALSE)
+
+barplot(mtcars$mpg, col = c139, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Petal.Width, pch = 18:20, col = c139 [unclass(iris$Species)], ann = FALSE)
+
+barplot(mtcars$mpg, col = c142, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Petal.Width, pch = 18:20, col = c142 [unclass(iris$Species)], ann = FALSE)
+
+barplot(mtcars$mpg, col = c148, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Petal.Width, pch = 18:20, col = c148 [unclass(iris$Species)], ann = FALSE)
+
+barplot(mtcars$mpg, col = c149, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Petal.Width, pch = 18:20, col = c149 [unclass(iris$Species)], ann = FALSE)
+
+barplot(mtcars$mpg, col = c157, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Petal.Width, pch = 18:20, col = c157 [unclass(iris$Species)], ann = FALSE)
+
+barplot(mtcars$mpg, col = c163, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Petal.Width, pch = 18:20, col = c163 [unclass(iris$Species)], ann = FALSE)
+
+barplot(mtcars$mpg, col = c171, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Petal.Width, pch = 18:20, col = c171 [unclass(iris$Species)], ann = FALSE)
+
+barplot(mtcars$mpg, col = c172, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Petal.Width, pch = 18:20, col = c172 [unclass(iris$Species)], ann = FALSE)
+
+barplot(mtcars$mpg, col = c174, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Sepal.Length, pch = 18:20, col = c174 [unclass(iris$Species)], ann = FALSE)
+
+barplot(mtcars$mpg, col = c194, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Sepal.Length, pch = 18:20, col = c194 [unclass(iris$Species)], ann = FALSE)
+
+barplot(mtcars$mpg, col = c204, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Petal.Width, pch = 18:20, col = c204 [unclass(iris$Species)], ann = FALSE)
+
+barplot(mtcars$mpg, col = c205, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Petal.Width, pch = 18:20, col = c205 [unclass(iris$Species)], ann = FALSE)
+
+barplot(mtcars$mpg, col = c207, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Sepal.Length, pch = 18:20, col = c207 [unclass(iris$Species)], ann = FALSE)
+
+barplot(mtcars$mpg, col = c223, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Sepal.Length, pch = 18:20, col = c223 [unclass(iris$Species)], ann = FALSE)
+
+barplot(mtcars$mpg, col = c226, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Sepal.Length, pch = 18:20, col = c226 [unclass(iris$Species)], ann = FALSE)
+
+barplot(mtcars$mpg, col = c232, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Sepal.Length, pch = 18:20, col = c232 [unclass(iris$Species)], ann = FALSE)
+
+barplot(mtcars$mpg, col = c239, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Sepal.Length, pch = 18:20, col = c239 [unclass(iris$Species)], ann = FALSE)
+
+barplot(mtcars$mpg, col = c240, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Sepal.Length, pch = 18:20, col = c240 [unclass(iris$Species)], ann = FALSE)
+
+barplot(mtcars$mpg, col = c343, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Sepal.Length, pch = 18:20, col = c343 [unclass(iris$Species)], ann = FALSE)
+
+```
+
+# Demo quads.
+
+```{r demoQuad}
+
+c252 <- wadaQuad("c252")
+c249 <- wadaQuad("c249")
+c263 <- wadaQuad("c263")
+c268 <- wadaQuad("c268")
+c271 <- wadaQuad("c271")
+c273 <- wadaQuad("c273")
+c279 <- wadaQuad("c279")
+c283 <- wadaQuad("c283")
+c289 <- wadaQuad("c289")
+c293 <- wadaQuad("c293")
+c296 <- wadaQuad("c296")
+c302 <- wadaQuad("c302")
+c310 <- wadaQuad("c310")
+c321 <- wadaQuad("c321")
+c329 <- wadaQuad("c329")
+c330 <- wadaQuad("c330")
+c332 <- wadaQuad("c332")
+c339 <- wadaQuad("c339")
+c341 <- wadaQuad("c341")
+c348 <- wadaQuad("c348")
+
+layout(matrix(1:4, nrow = 2))
+par(mar = c(2, 2, 2, 2))
+
+barplot(BOD$demand, col = c252, ann = FALSE, ylim = c(0, 20), border = NA)
+plot(airquality$Temp, airquality$Solar.R, pch = 18:19, col = c252, ann = FALSE)
+
+barplot(mtcars$mpg, col = c249, ann = FALSE, border = NA)
+plot(iris$Petal.Width, iris$Sepal.Width, pch = 18:19, col = c249, ann = FALSE)
+
+barplot(mtcars$mpg, col = c263, ann = FALSE, border = NA)
+plot(iris$Petal.Width, iris$Sepal.Width, pch = 18:19, col = c263, ann = FALSE)
+
+barplot(mtcars$mpg, col = c268, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Sepal.Length, pch = 18:19, col = c268, ann = FALSE)
+
+barplot(mtcars$mpg, col = c271, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Sepal.Length, pch = 17:20, col = c271, ann = FALSE)
+
+barplot(mtcars$mpg, col = c273, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Sepal.Length, pch = 17:20, col = c273, ann = FALSE)
+
+barplot(mtcars$mpg, col = c279, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Sepal.Length, pch = 17:20, col = c279, ann = FALSE)
+
+barplot(mtcars$mpg, col = c283, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Sepal.Length, pch = 17:20, col = c283, ann = FALSE)
+
+barplot(mtcars$mpg, col = c289, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Sepal.Length, pch = 17:20, col = c289, ann = FALSE)
+
+barplot(mtcars$mpg, col = c293, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Sepal.Length, pch = 17:20, col = c293, ann = FALSE)
+
+barplot(mtcars$mpg, col = c296, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Sepal.Length, pch = 17:20, col = c296, ann = FALSE)
+
+barplot(mtcars$mpg, col = c302, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Sepal.Length, pch = 17:20, col = c302, ann = FALSE)
+
+barplot(mtcars$mpg, col = c310, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Sepal.Length, pch = 17:20, col = c310, ann = FALSE)
+
+barplot(mtcars$mpg, col = c321, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Sepal.Length, pch = 17:20, col = c321, ann = FALSE)
+
+barplot(mtcars$mpg, col = c329, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Sepal.Length, pch = 17:20, col = c329, ann = FALSE)
+
+barplot(mtcars$mpg, col = c330, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Sepal.Length, pch = 17:20, col = c330, ann = FALSE)
+
+barplot(mtcars$mpg, col = c332, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Sepal.Length, pch = 17:20, col = c332, ann = FALSE)
+
+barplot(mtcars$mpg, col = c339, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Sepal.Length, pch = 17:20, col = c339, ann = FALSE)
+
+barplot(mtcars$mpg, col = c341, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Sepal.Length, pch = 17:20, col = c341, ann = FALSE)
+
+barplot(mtcars$mpg, col = c348, ann = FALSE, border = NA)
+plot(iris$Sepal.Width, iris$Sepal.Length, pch = 17:20, col = c348, ann = FALSE)
+
+```
+
+# ggplot2 demos.
+
+```{r gg}
+
+
+
+```
+
