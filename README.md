@@ -1,15 +1,19 @@
 # sanzo
 
-An R package by JRMA Maasch.
-
 # R Color Palettes Based on the Works of Sanzo Wada
+
+An R package by JRMA Maasch (2019).
+
 ### Table of contents
 
-<img src="https://github.com/jmaasch/sanzo/blob/master/dev/sanzo1.jpg" width="500" align="right"/>
+<img src="https://github.com/jmaasch/sanzo/blob/master/dev/sanzo1.jpg" width="400" align="right"/>
 
 1. [About](#about): origins and inspirations.
+
 2. [Usage](#usage): how to use the sanzo R package.
+
 3. [ggplot2 gallery](#ggplot2-gallery): view sample ggplot2 visualizations that employ sanzo.
+
 4. [Full suite](#full-suite): view all duos, trios, and quads.
 
 # About
