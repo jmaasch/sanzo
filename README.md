@@ -8,10 +8,10 @@ An R package by JRMA Maasch (2019).
 
 ### Table of contents
 
-**1. [About](#about):** origins and inspirations.
-**2. [Usage](#usage):** how to use the sanzo R package.
-**3. [ggplot2 gallery](#ggplot2-gallery):** view visualizations that employ sanzo.
-**4. [Full suite](#full-suite):** view all duos, trios, and quads.
+1. **[About](#about):** origins and inspirations.
+2. **[Usage](#usage):** how to use the sanzo R package.
+3. **[ggplot2 gallery](#ggplot2-gallery):** view visualizations that employ sanzo.
+4. **[Full suite](#full-suite):** view all duos, trios, and quads.
 
 # About
 
