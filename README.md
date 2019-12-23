@@ -32,7 +32,9 @@ Inspired by the art and color research of Sanzo Wada, his <a href="http://seigen
 #### Save palette with name or use directly.
 
 ```R
-my_palette <- sanzo.duo("c229")
+my_duo <- sanzo.duo("c229")
+my_trio <- sanzo.trio("c223")
+my_quad <- sanzo.quad("c252")
 ```
 
 Examples of direct use in base R and ggplot2 figures are shown below.
