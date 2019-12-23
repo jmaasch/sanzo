@@ -1,4 +1,4 @@
-#' List containing all quad palettes, defined by
+#' List containing all 20 quad palettes, defined by
 #' hexadecimal values.
 #' 
 #' @export

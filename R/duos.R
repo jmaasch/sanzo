@@ -1,4 +1,4 @@
-#' List containing all duo palettes, defined by
+#' List containing all 20 duo palettes, defined by
 #' hexadecimal values.
 #' 
 #' @export

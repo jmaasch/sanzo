@@ -1,4 +1,4 @@
-#' List containing all trio palettes, defined by
+#' List containing all 20 trio palettes, defined by
 #' hexadecimal values.
 #' 
 #' @export
