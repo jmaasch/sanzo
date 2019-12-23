@@ -2,14 +2,16 @@
 
 # R Color Palettes Based on the Works of Sanzo Wada
 
-<img src="https://github.com/jmaasch/sanzo/blob/master/dev/sanzo1.jpg" width="400" align="right"/>
+<img src="https://github.com/jmaasch/sanzo/blob/master/dev/sanzo1.jpg" width="600" align="right"/>
 
 An R package by JRMA Maasch (2019).
 
 ### Table of contents
 
 1. **[About](#about):** origins and inspirations.
+
 2. **[Usage](#usage):** how to use the sanzo R package.
+
 3. **[ggplot2 gallery](#ggplot2-gallery):** view visualizations that employ sanzo.
  * [Scatter plots.](#scatter-plots) | [Bar plots.](#bar-plots) | [Violin plots.](#violin-plots) | [Gradient.](#gradient)
 4. **[Full suite](#full-suite):** view all duos, trios, and quads.
