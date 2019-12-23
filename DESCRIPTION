@@ -1,9 +1,9 @@
 Package: sanzo
-Title: What the Package Does (One Line, Title Case)
+Title: Color Palettes Based on the Works of Sanzo Wada
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Jacqueline",
+           family = "Maasch",
            role = c("aut", "cre"),
            email = "first.last@example.com",
            comment = c(ORCID = "YOUR-ORCID-ID"))
