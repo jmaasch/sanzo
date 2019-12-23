@@ -42,16 +42,27 @@ Examples of direct use in base R and ggplot2 figures are shown below.
 #### Use with base R.
 
  ```R
+# Use directly.
 plot(df$x, df$y, col = sanzo.duo("c085"))
+
+# Use saved palette.
+plot(df$x, df$y, col = my_duo)
  ```
  
 #### Use with ggplot2.
 
 ```R
+# Use directly.
 ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) + 
     geom_bar(stat = "identity") +
     theme_few() +
     scale_fill_manual(values = sanzo.duo("c103"))
+
+# Use saved palette.
+ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) + 
+    geom_bar(stat = "identity") +
+    theme_few() +
+    scale_fill_manual(values = my_duo)
 ```
 
 #### Use as a continuous color palette.
