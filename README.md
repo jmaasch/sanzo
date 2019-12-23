@@ -2,7 +2,7 @@
 
 # R Color Palettes Based on the Works of Sanzo Wada
 
-<img src="https://github.com/jmaasch/sanzo/blob/master/dev/sanzo1.jpg" width="600" align="right"/>
+<img src="https://github.com/jmaasch/sanzo/blob/master/dev/sanzo1.jpg" width="500" align="right"/>
 
 An R package by JRMA Maasch (2019).
 
