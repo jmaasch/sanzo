@@ -14,7 +14,17 @@ Inspired by the art and color research of Sanzo Wada, his <a href="http://seigen
 
 ## ggplot2
 
+### Scatter plots.
+
 |   |   |
 |:-------------------------:|:-------------------------:|
 |![scatter1](https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/scatter1.png)|![scatter2](https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/scatter2.png)|
 |![scatter3](https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/scatter3.png)|![scatter4](https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/scatter5.png)|
+
+### Bar plots.
+
+|   |   |
+|:-------------------------:|:-------------------------:|
+|![bar1](https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/bar.png)|![bar2](https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/stacked_bar.png)|
+
+
