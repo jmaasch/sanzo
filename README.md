@@ -16,12 +16,13 @@ Inspired by the art and color research of Sanzo Wada, his <a href="http://seigen
 
 ### Duo palettes.
 
-|   |   |   |
-|:-------------------------:|:-------------------------:|:-------------------------:|
-|![demo1](https://github.com/jmaasch/sanzo/blob/master/dev/demos2/Unknown-1.png)|![demo2](https://github.com/jmaasch/sanzo/blob/master/dev/demos2/Unknown-2.png)| ![demo3](https://github.com/jmaasch/sanzo/blob/master/dev/demos2/Unknown-3.png)|
-|![demo4](https://github.com/jmaasch/sanzo/blob/master/dev/demos2/Unknown-4.png)|![demo5](https://github.com/jmaasch/sanzo/blob/master/dev/demos2/Unknown-5.png)|![demo6](https://github.com/jmaasch/sanzo/blob/master/dev/demos2/Unknown-6.png)|
-|![demo7](https://github.com/jmaasch/sanzo/blob/master/dev/demos2/Unknown-7.png)|![demo8](https://github.com/jmaasch/sanzo/blob/master/dev/demos2/Unknown-8.png)|![demo9](https://github.com/jmaasch/sanzo/blob/master/dev/demos2/Unknown-9.png)|
-|![demo10](https://github.com/jmaasch/sanzo/blob/master/dev/demos2/Unknown-10.png)|
+|   |   |
+|:-------------------------:|:-------------------------:|
+|![demo1](https://github.com/jmaasch/sanzo/blob/master/dev/demos2/Unknown-1.png)|![demo2](https://github.com/jmaasch/sanzo/blob/master/dev/demos2/Unknown-2.png)| 
+|![demo3](https://github.com/jmaasch/sanzo/blob/master/dev/demos2/Unknown-3.png)|![demo4](https://github.com/jmaasch/sanzo/blob/master/dev/demos2/Unknown-4.png)|
+|![demo5](https://github.com/jmaasch/sanzo/blob/master/dev/demos2/Unknown-5.png)|![demo6](https://github.com/jmaasch/sanzo/blob/master/dev/demos2/Unknown-6.png)|
+|![demo7](https://github.com/jmaasch/sanzo/blob/master/dev/demos2/Unknown-7.png)|![demo8](https://github.com/jmaasch/sanzo/blob/master/dev/demos2/Unknown-8.png)|
+|![demo9](https://github.com/jmaasch/sanzo/blob/master/dev/demos2/Unknown-9.png)|![demo10](https://github.com/jmaasch/sanzo/blob/master/dev/demos2/Unknown-10.png)|
 
 ### Concatenate two sanzo palettes for a custom palette.
 
