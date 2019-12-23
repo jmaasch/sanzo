@@ -11,18 +11,14 @@ An R package by JRMA Maasch (2019).
 1. **[About](#about):** origins and inspirations.
 2. **[Usage](#usage):** how to use the sanzo R package.
 3. **[ggplot2 gallery](#ggplot2-gallery):** view visualizations that employ sanzo.
-<ol>
-  * [Scatter plots.](#scatter-plots)
-  * [Bar plots.](#bar-plots)
-  * [Violin plots.](#violin-plots)
-  * [Gradient.](#gradient)
- </ol>
+ * [Scatter plots.](#scatter-plots)
+ * [Bar plots.](#bar-plots)
+ * [Violin plots.](#violin-plots)
+ * [Gradient.](#gradient)
 4. **[Full suite](#full-suite):** view all duos, trios, and quads.
-<ol>
-  * [Duo palettes.](#duo-palettes)
-  * [Trio palettes.](#trio-palettes)
-  * [Quad palettes.](#quad-palettes)
- </ol>
+ * [Duo palettes.](#duo-palettes)
+ * [Trio palettes.](#trio-palettes)
+ * [Quad palettes.](#quad-palettes)
 
 # About
 
