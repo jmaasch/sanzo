@@ -68,6 +68,7 @@ Inspired by the art and color research of Sanzo Wada, his <a href="http://seigen
 ### Quad palettes.
 
 |   |   |
+|:-------------------------:|:-------------------------:|
 |![demo1](https://github.com/jmaasch/sanzo/blob/master/dev/demos4/Unknown-1.png)|![demo2](https://github.com/jmaasch/sanzo/blob/master/dev/demos4/Unknown-2.png)| 
 |![demo3](https://github.com/jmaasch/sanzo/blob/master/dev/demos4/Unknown-3.png)|![demo4](https://github.com/jmaasch/sanzo/blob/master/dev/demos4/Unknown-4.png)|
 |![demo5](https://github.com/jmaasch/sanzo/blob/master/dev/demos4/Unknown-5.png)|![demo6](https://github.com/jmaasch/sanzo/blob/master/dev/demos4/Unknown-6.png)|
