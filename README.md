@@ -12,7 +12,14 @@ Inspired by the art and color research of Sanzo Wada, his <a href="http://seigen
 
 # Usage
 
-## ggplot2
+## Demos.
+
+
+### Concatenate two sanzo palettes for a custom palette.
+
+<img src="https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/concat.png" width="500" align="middle"/>
+
+## ggplot2 gallery
 
 ### Scatter plots.
 
