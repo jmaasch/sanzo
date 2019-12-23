@@ -24,14 +24,12 @@ Inspired by the art and color research of Sanzo Wada, his <a href="http://seigen
 
 ### Scatter plots.
 
-|   |   |
 |:-------------------------:|:-------------------------:|
 |![scatter1](https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/scatter1.png)|![scatter2](https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/scatter2.png)|
 |![scatter3](https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/scatter3.png)|![scatter4](https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/scatter5.png)|
 
 ### Bar plots.
 
-|   |   |
 |:-------------------------:|:-------------------------:|
 |![bar1](https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/bar.png)|![bar2](https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/stacked_bar.png)|
 
@@ -47,7 +45,6 @@ Inspired by the art and color research of Sanzo Wada, his <a href="http://seigen
 
 ### Duo palettes.
 
-|   |   |
 |:-------------------------:|:-------------------------:|
 |![demo1](https://github.com/jmaasch/sanzo/blob/master/dev/demos2/Unknown-1.png)|![demo2](https://github.com/jmaasch/sanzo/blob/master/dev/demos2/Unknown-2.png)| 
 |![demo3](https://github.com/jmaasch/sanzo/blob/master/dev/demos2/Unknown-3.png)|![demo4](https://github.com/jmaasch/sanzo/blob/master/dev/demos2/Unknown-4.png)|
@@ -57,7 +54,6 @@ Inspired by the art and color research of Sanzo Wada, his <a href="http://seigen
 
 ### Trio palettes.
 
-|   |   |
 |:-------------------------:|:-------------------------:|
 |![demo1](https://github.com/jmaasch/sanzo/blob/master/dev/demos3/Unknown-1.png)|![demo2](https://github.com/jmaasch/sanzo/blob/master/dev/demos3/Unknown-2.png)| 
 |![demo3](https://github.com/jmaasch/sanzo/blob/master/dev/demos3/Unknown-3.png)|![demo4](https://github.com/jmaasch/sanzo/blob/master/dev/demos3/Unknown-4.png)|
@@ -67,7 +63,6 @@ Inspired by the art and color research of Sanzo Wada, his <a href="http://seigen
 
 ### Quad palettes.
 
-|   |   |
 |:-------------------------:|:-------------------------:|
 |![demo1](https://github.com/jmaasch/sanzo/blob/master/dev/demos4/Unknown-1.png)|![demo2](https://github.com/jmaasch/sanzo/blob/master/dev/demos4/Unknown-2.png)| 
 |![demo3](https://github.com/jmaasch/sanzo/blob/master/dev/demos4/Unknown-3.png)|![demo4](https://github.com/jmaasch/sanzo/blob/master/dev/demos4/Unknown-4.png)|
