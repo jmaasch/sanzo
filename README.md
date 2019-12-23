@@ -37,3 +37,7 @@ Inspired by the art and color research of Sanzo Wada, his <a href="http://seigen
 ### Violin plots.
 
 <img src="https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/violin.png" align="middle"/>
+
+### Gradient.
+
+<img src="https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/gradient.png" align="middle"/>
