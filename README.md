@@ -28,6 +28,50 @@ Inspired by the art and color research of Sanzo Wada, his <a href="http://seigen
 
 # Usage
 
+
+#### Save palette with name.
+```R
+my_palette <- sanzo.duo("c229")
+```
+
+
+#### Customize.
+
+Concatenate multiple sanzo palettes to make a custom palette or cherry-pick individual colors. All hexadecimals are provided in by the ```sanzo.demo``` functions and ```sanzo.info``` functions.
+
+ ```R
+c033 <- sanzo.duo("c033")
+c095 <- sanzo.duo("c095")
+custom_quad <- c(c033, c095)
+```
+ 
+
+#### Use with base R.
+
+ ```R
+plot(df$x, df$y, col = sanzo.duo("c085"))
+ ```
+ 
+#### Use with ggplot2.
+
+```R
+ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) + 
+    geom_bar(stat = "identity") +
+    theme_few() +
+    scale_fill_manual(values = sanzo.duo("c103"))
+```
+
+#### Use as a continuous color palette.
+
+By default, sanzo palettes are discrete. Using scale_fill_gradientn() or scale_color_gradientn() in ggplot2 allows you to use any sanzo palette as a continuous gradient.
+
+```R
+ggplot(faithfuld, aes(waiting, eruptions)) +
+    geom_raster(aes(fill = density), interpolate = TRUE) +
+    theme_few() +
+    scale_fill_gradientn(colors = sanzo.duo("c102")) 
+```
+
 ### Concatenate two sanzo palettes for a custom palette.
 
 <img src="https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/concat.png" width="500" align="middle"/>
