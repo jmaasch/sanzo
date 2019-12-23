@@ -29,22 +29,13 @@ Inspired by the art and color research of Sanzo Wada, his <a href="http://seigen
 # Usage
 
 
-#### Save palette with name.
+#### Save palette with name or use directly.
+
 ```R
 my_palette <- sanzo.duo("c229")
 ```
 
-
-#### Customize.
-
-Concatenate multiple sanzo palettes to make a custom palette or cherry-pick individual colors. All hexadecimals are provided in by the ```sanzo.demo``` functions and ```sanzo.info``` functions.
-
- ```R
-c033 <- sanzo.duo("c033")
-c095 <- sanzo.duo("c095")
-custom_quad <- c(c033, c095)
-```
- 
+Examples of direct use in base R and ggplot2 figures are shown below.
 
 #### Use with base R.
 
@@ -72,7 +63,15 @@ ggplot(faithfuld, aes(waiting, eruptions)) +
     scale_fill_gradientn(colors = sanzo.duo("c102")) 
 ```
 
-### Concatenate two sanzo palettes for a custom palette.
+#### Customize.
+
+Concatenate multiple sanzo palettes to make a custom palette or cherry-pick individual colors. All hexadecimals are provided in by the ```sanzo.demo``` functions and ```sanzo.info``` functions.
+
+ ```R
+c033 <- sanzo.duo("c033")
+c095 <- sanzo.duo("c095")
+custom_quad <- c(c033, c095)
+```
 
 <img src="https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/concat.png" width="500" align="middle"/>
 
