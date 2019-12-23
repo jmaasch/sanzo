@@ -10,11 +10,17 @@ Inspired by the art and color research of Sanzo Wada, his <a href="http://seigen
 
 <img src="https://github.com/jmaasch/sanzo/blob/master/dev/sanzo1.jpg" width="500" align="middle"/>
 
+# Table of Contents
+
+1. [Usage](#usage): how to use the sanzo R package.
+2. [ggplot2 gallery](#ggplot2-gallery): view sample ggplot2 visualizations that employ sanzo.
+3. [Full suite](#full-suite): view all duos, trios, and quads.
+## My first title
+Some text.
+## My second title
+
+
 # Usage
-
-## Demos.
-
-
 
 ### Concatenate two sanzo palettes for a custom palette.
 
