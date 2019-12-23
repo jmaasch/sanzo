@@ -2,14 +2,17 @@
 
 # R Color Palettes Based on the Works of Sanzo Wada
 
-<img src="https://github.com/jmaasch/sanzo/blob/master/dev/sanzo1.jpg" width="500" align="right"/>
+<img src="https://github.com/jmaasch/sanzo/blob/master/dev/sanzo_dictionary/sanzo1.jpg" width="500" align="right"/>
+<img src="https://github.com/jmaasch/sanzo/blob/master/dev/sanzo_dictionary/sanzo_amazon1.jpg" width="500" align="right"/>
 
 An R package by JRMA Maasch (2019).
 
 ### Table of contents
 
 1. **[About](#about):** origins and inspirations.
+  * Subsections coming.
 2. **[Usage](#usage):** how to use the sanzo R package.
+  * Subsections coming.
 3. **[ggplot2 gallery](#ggplot2-gallery):** view visualizations that employ sanzo.
  * [Scatter plots.](#scatter-plots) | [Bar plots.](#bar-plots) | [Violin plots.](#violin-plots) | [Gradient.](#gradient)
 4. **[Full suite](#full-suite):** view all duos, trios, and quads.
@@ -21,7 +24,7 @@ Inspired by the art and color research of Sanzo Wada, his <a href="http://seigen
 
 > Sanzo Wada (1883-1967) was an artist, teacher, costume and kimono designer during a turbulent time in avant-garde Japanese art and cinema. Wada was ahead of his time in developing traditional and Western influenced color combinations, helping to lay the foundations for contemporary color research. Based on his original 6-volume work from the 1930s, this book offers 348 color combinations with CMYK and Pantone numbers, as attractive and sensuous as the book’s own design. – *A Dictionary Of Color Combinations*
 
-<img src="https://github.com/jmaasch/sanzo/blob/master/dev/sanzo2.jpg" width="850" align="middle"/>
+<img src="https://github.com/jmaasch/sanzo/blob/master/dev/sanzo_dictionary/sanzo2.jpg" width="850" align="middle"/>
 
 # Usage
 
