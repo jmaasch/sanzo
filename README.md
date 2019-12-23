@@ -3,7 +3,7 @@
 ## R Color Palettes Based on the Works of Sanzo Wada
 
 <img src="https://github.com/jmaasch/sanzo/blob/master/dev/sanzo2.jpg" width="500" align="left"/>
-<img src="https://github.com/jmaasch/sanzo/blob/master/dev/sanzo1.jpg" width="500" align="right"/>
+<img src="https://github.com/jmaasch/sanzo/blob/master/dev/sanzo1.jpg" width="500" align="left"/>
 
 Inspired by the art and color research of Sanzo Wada, his <a href="http://seigensha.com/en/2016/11/01/978-4-86152-247-5/" style="color: rgb(0,0,0)"><font color="000000">Dictionary Of Color Combinations</font></a>, and the incredible <a href="https://github.com/dblodorn/sanzo-wada" style="color: rgb(0,0,0)"><font color="000000">interactive site</font></a> by Dain M. Blodorn Kim, this package brings Wada's color combinations to R for easy use in data visualizations.
 
