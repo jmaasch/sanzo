@@ -21,6 +21,8 @@ Inspired by the art and color research of Sanzo Wada, his <a href="http://seigen
 
 <img src="https://github.com/jmaasch/sanzo/blob/master/dev/sanzo_dictionary/sanzo2.jpg" width="850" align="middle"/>
 
+[back to top](#-----)
+
 # Usage
 
 #### View palette demos using ```sanzo.demo``` functions.
