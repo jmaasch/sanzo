@@ -2,8 +2,8 @@
 
 # R Color Palettes Based on the Works of Sanzo Wada
 
-<img src="https://github.com/jmaasch/sanzo/blob/master/dev/sanzo_dictionary/sanzo1.jpg" width="400" align="right"/>
-<img src="https://github.com/jmaasch/sanzo/blob/master/dev/sanzo_dictionary/sanzo_amazon1.jpg" width="400" align="right"/>
+<img src="https://github.com/jmaasch/sanzo/blob/master/dev/sanzo_dictionary/sanzo1.jpg" width="410" align="right"/>
+<img src="https://github.com/jmaasch/sanzo/blob/master/dev/sanzo_dictionary/sanzo_amazon1.jpg" width="410" align="right"/>
 
 An R package by JRMA Maasch (2019).
 
