@@ -112,7 +112,7 @@ c095 <- sanzo.duo("c095")
 custom_quad <- c(c033, c095)
 ```
 
-<img src="https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/concat.png" width="500" align="middle"/>
+<img src="https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/concat.png" width="500" align="right"/>
 
 ## ggplot2 gallery
 
