@@ -21,7 +21,10 @@ Inspired by the art and color research of Sanzo Wada, his <a href="http://seigen
 
 <img src="https://github.com/jmaasch/sanzo/blob/master/dev/sanzo_dictionary/sanzo2.jpg" width="850" align="middle"/>
 
-:arrow_up: [return to top](#sanzo) :arrow_up:
+
+&#8593; [return to top](#sanzo)
+
+:arrow_up: [return to top](#sanzo)
 
 # Usage
 
