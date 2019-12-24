@@ -23,8 +23,18 @@ Inspired by the art and color research of Sanzo Wada, his <a href="http://seigen
 
 # Usage
 
+#### View palette demos using ```sanzo.demo``` functions.
 
-#### Assign palette to a name or use directly.
+To illustrate the potential of each palette, each color combination can be demo'd via base R scatter and bar plots.
+
+```R
+sanzo.demo2()
+sanzo.demo3()
+sanzo.demo4()
+sanzo.demo.all()
+```
+
+#### Assign palette to a name.
 
 ```R
 my_duo <- sanzo.duo("c229")
@@ -32,7 +42,7 @@ my_trio <- sanzo.trio("c223")
 my_quad <- sanzo.quad("c252")
 ```
 
-Examples of direct use in base R and ggplot2 figures are shown below.
+Assignment is optional. Examples of direct use in base R and ggplot2 figures are shown below.
 
 #### Use with base R.
 
@@ -40,8 +50,8 @@ Examples of direct use in base R and ggplot2 figures are shown below.
 # Use directly.
 plot(df$x, df$y, col = sanzo.duo("c085"))
 
-# Assign palette to a name.
-plot(df$x, df$y, col = my_duo)
+# When palette has been assigned to a name.
+plot(df$x, df$y, col = my_quad)
  ```
  
 #### Use with ggplot2.
@@ -53,11 +63,11 @@ ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) +
     theme_few() +
     scale_fill_manual(values = sanzo.duo("c103"))
 
-# Assign palette to a name.
+# When palette has been assigned to a name.
 ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) + 
     geom_bar(stat = "identity") +
     theme_few() +
-    scale_fill_manual(values = my_duo)
+    scale_fill_manual(values = my_trio)
 ```
 
 #### Use as a continuous color palette.
@@ -69,6 +79,28 @@ ggplot(faithfuld, aes(waiting, eruptions)) +
     geom_raster(aes(fill = density), interpolate = TRUE) +
     theme_few() +
     scale_fill_gradientn(colors = sanzo.duo("c102")) 
+```
+
+#### Access palette metadata with ```sanzo.info``` functions.
+
+These functions return a data frame containing long-form names, short-form IDs, hexadecimal values, and links to Dain M. Blodorn Kim's https://sanzo-wada.dmbk.io for duos, trios, quads, or for all palettes.
+
+```R
+duo_info_df <- sanzo.info2()
+print(sanzo.info2())
+knitr::kable(sanzo.info2())
+
+trio_info_df <- sanzo.info3()
+print(sanzo.info3())
+knitr::kable(sanzo.info3())
+
+quad_info_df <- sanzo.info4()
+print(sanzo.info4())
+knitr::kable(sanzo.info4())
+
+info_df <- sanzo.info.all()
+print(sanzo.info.all())
+knitr::kable(sanzo.info.all())
 ```
 
 #### Customize.
