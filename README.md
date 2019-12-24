@@ -26,6 +26,10 @@ Inspired by the art and color research of Sanzo Wada, his <a href="http://seigen
 
 # Usage
 
+#### Installation
+
+Coming soon.
+
 #### View palette demos using ```sanzo.demo``` functions.
 
 To illustrate the potential of each palette, each color combination can be demo'd via base R scatter and bar plots.
