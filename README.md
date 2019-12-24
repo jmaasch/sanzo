@@ -25,7 +25,7 @@ Inspired by the art and color research of Sanzo Wada, his <a href="http://seigen
 # Usage
 
 
-#### Save palette with name or use directly.
+#### Assign palette to a name or use directly.
 
 ```R
 my_duo <- sanzo.duo("c229")
@@ -41,7 +41,7 @@ Examples of direct use in base R and ggplot2 figures are shown below.
 # Use directly.
 plot(df$x, df$y, col = sanzo.duo("c085"))
 
-# Use saved palette.
+# Assign palette to a name.
 plot(df$x, df$y, col = my_duo)
  ```
  
@@ -54,7 +54,7 @@ ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) +
     theme_few() +
     scale_fill_manual(values = sanzo.duo("c103"))
 
-# Use saved palette.
+# Assign palette to a name.
 ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) + 
     geom_bar(stat = "identity") +
     theme_few() +
@@ -74,7 +74,7 @@ ggplot(faithfuld, aes(waiting, eruptions)) +
 
 #### Customize.
 
-Concatenate multiple sanzo palettes to make a custom palette or cherry-pick individual colors. All hexadecimals are provided in by the ```sanzo.demo``` functions and ```sanzo.info``` functions.
+Concatenate multiple sanzo palettes to make a custom palette or cherry-pick individual colors. All hexadecimals are provided by the ```sanzo.demo``` functions and ```sanzo.info``` functions.
 
  ```R
 c033 <- sanzo.duo("c033")
