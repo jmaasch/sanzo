@@ -82,7 +82,7 @@ ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) +
 
 #### Use as a continuous color palette.
 
-By default, sanzo palettes are discrete. Using ```scale_fill_gradientn``` or ```scale_color_gradientn``` in ```ggplot2``` allows you to use any ```sanzo``` palette as a continuous gradient.
+By default, ```sanzo``` palettes are discrete. Using ```scale_fill_gradientn``` or ```scale_color_gradientn``` in ```ggplot2``` allows you to use any ```sanzo``` palette as a continuous gradient.
 
 ```R
 ggplot(faithfuld, aes(waiting, eruptions)) +
@@ -113,7 +113,7 @@ knitr::kable(sanzo.info.all())
 
 #### Customize.
 
-Concatenate multiple sanzo palettes to make a custom palette or cherry-pick individual colors. All hexadecimals are provided by the ```sanzo.demo``` functions and ```sanzo.info``` functions.
+Concatenate multiple palettes to make a custom palette or cherry-pick individual colors. All hexadecimals are provided by the ```sanzo.demo``` functions and ```sanzo.info``` functions.
 
  ```R
 c033 <- sanzo.duo("c033")
