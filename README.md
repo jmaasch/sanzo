@@ -36,13 +36,13 @@ sanzo.demo.all()
 
 #### Assign palette to a name.
 
+Assignment is optional. Examples of direct use in base R and ggplot2 figures are shown below.
+
 ```R
 my_duo <- sanzo.duo("c229")
 my_trio <- sanzo.trio("c223")
 my_quad <- sanzo.quad("c252")
 ```
-
-Assignment is optional. Examples of direct use in base R and ggplot2 figures are shown below.
 
 #### Use with base R.
 
@@ -87,18 +87,14 @@ These functions return a data frame containing long-form names, short-form IDs, 
 
 ```R
 duo_info_df <- sanzo.info2()
-print(sanzo.info2())
-knitr::kable(sanzo.info2())
 
 trio_info_df <- sanzo.info3()
-print(sanzo.info3())
-knitr::kable(sanzo.info3())
 
 quad_info_df <- sanzo.info4()
-print(sanzo.info4())
-knitr::kable(sanzo.info4())
 
 info_df <- sanzo.info.all()
+
+# Print data frame.
 print(sanzo.info.all())
 knitr::kable(sanzo.info.all())
 ```
