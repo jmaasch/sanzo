@@ -104,6 +104,8 @@ knitr::kable(sanzo.info.all())
 
 #### Customize.
 
+<img src="https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/concat.png" width="500" align="right"/>
+
 Concatenate multiple sanzo palettes to make a custom palette or cherry-pick individual colors. All hexadecimals are provided by the ```sanzo.demo``` functions and ```sanzo.info``` functions.
 
  ```R
@@ -111,8 +113,6 @@ c033 <- sanzo.duo("c033")
 c095 <- sanzo.duo("c095")
 custom_quad <- c(c033, c095)
 ```
-
-<img src="https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/concat.png" width="500" align="right"/>
 
 ## ggplot2 gallery
 
