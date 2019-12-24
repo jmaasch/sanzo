@@ -1,4 +1,4 @@
-# sanzo
+# ```sanzo```
 
 # R Color Palettes Based on the Works of Sanzo Wada
 An R package by JRMA Maasch (2019).
@@ -57,7 +57,7 @@ plot(df$x, df$y, col = sanzo.duo("c085"))
 plot(df$x, df$y, col = my_quad)
  ```
  
-#### Use with ggplot2.
+#### Use with ```ggplot2```.
 
 ```R
 # Use directly.
@@ -75,7 +75,7 @@ ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) +
 
 #### Use as a continuous color palette.
 
-By default, sanzo palettes are discrete. Using scale_fill_gradientn() or scale_color_gradientn() in ggplot2 allows you to use any sanzo palette as a continuous gradient.
+By default, sanzo palettes are discrete. Using ```scale_fill_gradientn``` or ```scale_color_gradientn``` in ```ggplot2``` allows you to use any ```sanzo``` palette as a continuous gradient.
 
 ```R
 ggplot(faithfuld, aes(waiting, eruptions)) +
@@ -114,7 +114,7 @@ c095 <- sanzo.duo("c095")
 custom_quad <- c(c033, c095)
 ```
 
-## ggplot2 gallery
+## ```ggplot2``` gallery
 
 ### Scatter plots.
 
