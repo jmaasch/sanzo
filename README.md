@@ -24,8 +24,6 @@ Inspired by the art and color research of Sanzo Wada, his <a href="http://seigen
 
 &#8593; [return to top](#sanzo)
 
-:arrow_up: [return to top](#sanzo)
-
 # Usage
 
 #### View palette demos using ```sanzo.demo``` functions.
@@ -126,6 +124,8 @@ c095 <- sanzo.duo("c095")
 custom_quad <- c(c033, c095)
 ```
 
+&#8593; [return to top](#sanzo)
+
 ## ```ggplot2``` gallery
 
 ### Scatter plots.
@@ -149,6 +149,8 @@ custom_quad <- c(c033, c095)
 
 <img src="https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/gradient.png" align="middle"/>
 
+&#8593; [return to top](#sanzo)
+
 # Full suite
 
 ### Duo palettes.
@@ -161,6 +163,8 @@ custom_quad <- c(c033, c095)
 |![demo7](https://github.com/jmaasch/sanzo/blob/master/dev/demos2/Unknown-7.png)|![demo8](https://github.com/jmaasch/sanzo/blob/master/dev/demos2/Unknown-8.png)|
 |![demo9](https://github.com/jmaasch/sanzo/blob/master/dev/demos2/Unknown-9.png)|![demo10](https://github.com/jmaasch/sanzo/blob/master/dev/demos2/Unknown-10.png)|
 
+&#8593; [return to top](#sanzo)
+
 ### Trio palettes.
 
 |   |   |
@@ -171,6 +175,8 @@ custom_quad <- c(c033, c095)
 |![demo7](https://github.com/jmaasch/sanzo/blob/master/dev/demos3/Unknown-7.png)|![demo8](https://github.com/jmaasch/sanzo/blob/master/dev/demos3/Unknown-8.png)|
 |![demo9](https://github.com/jmaasch/sanzo/blob/master/dev/demos3/Unknown-9.png)|![demo10](https://github.com/jmaasch/sanzo/blob/master/dev/demos3/Unknown-10.png)|
 
+&#8593; [return to top](#sanzo)
+
 ### Quad palettes.
 
 |   |   |
@@ -180,3 +186,5 @@ custom_quad <- c(c033, c095)
 |![demo5](https://github.com/jmaasch/sanzo/blob/master/dev/demos4/Unknown-5.png)|![demo6](https://github.com/jmaasch/sanzo/blob/master/dev/demos4/Unknown-6.png)|
 |![demo7](https://github.com/jmaasch/sanzo/blob/master/dev/demos4/Unknown-7.png)|![demo8](https://github.com/jmaasch/sanzo/blob/master/dev/demos4/Unknown-8.png)|
 |![demo9](https://github.com/jmaasch/sanzo/blob/master/dev/demos4/Unknown-9.png)|![demo10](https://github.com/jmaasch/sanzo/blob/master/dev/demos4/Unknown-10.png)|
+
+&#8593; [return to top](#sanzo)
