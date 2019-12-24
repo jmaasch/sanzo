@@ -3,15 +3,15 @@
 # R Color Palettes Based on the Works of Sanzo Wada
 An R package by JRMA Maasch (2019).
 
-<img src="https://github.com/jmaasch/sanzo/blob/master/dev/sanzo_dictionary/sanzo1.jpg" width="410" align="right"/>
 <img src="https://github.com/jmaasch/sanzo/blob/master/dev/sanzo_dictionary/sanzo_amazon1.jpg" width="410" align="right"/>
+<img src="https://github.com/jmaasch/sanzo/blob/master/dev/sanzo_dictionary/sanzo1.jpg" width="410" align="right"/>
 
 ### Table of contents
 
 1. **[About](#about):** origins and inspirations.
 2. **[Usage](#usage):** how to use the sanzo R package.
 3. **[ggplot2 gallery](#ggplot2-gallery):** [Scatter plots.](#scatter-plots) | [Bar plots.](#bar-plots) | [Violin plots.](#violin-plots) | [Gradient.](#gradient)
-4. **[Full suite](#full-suite):** view all [Duo palettes.](#duo-palettes) | [Trio palettes.](#trio-palettes) | [Quad palettes.](#quad-palettes)
+4. **[Full suite](#full-suite):** [Duo palettes.](#duo-palettes) | [Trio palettes.](#trio-palettes) | [Quad palettes.](#quad-palettes)
 
 # About
 
@@ -33,6 +33,9 @@ sanzo.demo3()
 sanzo.demo4()
 sanzo.demo.all()
 ```
+
+To view the output of these functions, see:
+**[Full suite](#full-suite):** [Duo palettes.](#duo-palettes) | [Trio palettes.](#trio-palettes) | [Quad palettes.](#quad-palettes)
 
 #### Assign palette to a name.
 
