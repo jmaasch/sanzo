@@ -28,9 +28,16 @@ Inspired by the art and color research of Sanzo Wada, his <a href="http://seigen
 To illustrate the potential of each palette, each color combination can be demo'd via base R scatter and bar plots.
 
 ```R
+# Print demo plots for duos.
 sanzo.demo2()
+
+# Print demo plots for trios.
 sanzo.demo3()
+
+# Print demo plots for quads.
 sanzo.demo4()
+
+# Print demo plots for all palettes.
 sanzo.demo.all()
 ```
 
@@ -50,7 +57,7 @@ my_quad <- sanzo.quad("c252")
 #### Use with base R.
 
  ```R
-# Use directly.
+# When using directly.
 plot(df$x, df$y, col = sanzo.duo("c085"))
 
 # When palette has been assigned to a name.
@@ -60,7 +67,7 @@ plot(df$x, df$y, col = my_quad)
 #### Use with ```ggplot2```.
 
 ```R
-# Use directly.
+# When using directly.
 ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) + 
     geom_bar(stat = "identity") +
     theme_few() +
@@ -123,15 +130,15 @@ custom_quad <- c(c033, c095)
 |![scatter1](https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/scatter1.png)|![scatter2](https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/scatter2.png)|
 |![scatter3](https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/scatter3.png)|![scatter4](https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/scatter5.png)|
 
+### Violin plots.
+
+<img src="https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/violin.png" align="middle"/>
+
 ### Bar plots.
 
 |   |   |
 |:-------------------------:|:-------------------------:|
 |![bar1](https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/bar.png)|![bar2](https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/stacked_bar.png)|
-
-### Violin plots.
-
-<img src="https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/violin.png" align="middle"/>
 
 ### Gradient.
 
