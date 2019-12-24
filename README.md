@@ -34,7 +34,7 @@ sanzo.demo4()
 sanzo.demo.all()
 ```
 
-To view the output of these functions, see:
+To view the output of these functions, see 
 **[Full suite](#full-suite):** [Duo palettes.](#duo-palettes) | [Trio palettes.](#trio-palettes) | [Quad palettes.](#quad-palettes)
 
 #### Assign palette to a name.
