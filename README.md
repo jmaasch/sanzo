@@ -98,6 +98,8 @@ ggplot(faithfuld, aes(waiting, eruptions)) +
     scale_fill_gradientn(colors = sanzo.duo("c102")) 
 ```
 
+See example visualizations [here.](#gradient)
+
 #### Access palette metadata with ```sanzo.info``` functions.
 
 These functions return a data frame containing long-form names, short-form IDs, hexadecimal values, and links to Dain M. Blodorn Kim's https://sanzo-wada.dmbk.io for duos, trios, quads, or for all palettes.
@@ -152,6 +154,8 @@ custom_quad <- c(c033, c095)
 ### Gradient.
 
 <img src="https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/gradient.png" align="middle"/>
+
+See how to use ```sanzo``` color combinations as continuous palettes [here.](#use-as-a-continuous-color-palette)
 
 &#8593; [return to top](#sanzo)
 
