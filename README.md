@@ -9,7 +9,7 @@ An R package by JRMA Maasch (2019).
 ### Table of contents
 
 1. **[About](#about):** origins and inspirations.
-2. **[Usage](#usage):** how to use the ```sanzo``` R package.
+2. **[Usage](#usage):** how to use this package.
 3. **[ggplot2 gallery](#ggplot2-gallery):** [Scatter plots.](#scatter-plots) | [Bar plots.](#bar-plots) | [Violin plots.](#violin-plots) | [Gradient.](#gradient)
 4. **[View full suite](#view-full-suite):** [Duo palettes.](#duo-palettes) | [Trio palettes.](#trio-palettes) | [Quad palettes.](#quad-palettes)
 
@@ -28,7 +28,13 @@ Inspired by the art and color research of Sanzo Wada, his <a href="http://seigen
 
 #### Installation
 
-Coming soon.
+```R
+# Install package.
+devtools::install_github("jmaasch/sanzo")
+
+# Load.
+library(sanzo)
+```
 
 #### View palette demos using ```sanzo.demo``` functions.
 
@@ -74,17 +80,10 @@ plot(df$x, df$y, col = my_quad)
 #### Use with ```ggplot2```.
 
 ```R
-# When using directly.
 ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) + 
     geom_bar(stat = "identity") +
     theme_few() +
     scale_fill_manual(values = sanzo.duo("c103"))
-
-# When palette has been assigned to a name.
-ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) + 
-    geom_bar(stat = "identity") +
-    theme_few() +
-    scale_fill_manual(values = my_trio)
 ```
 
 #### Use as a continuous color palette.
