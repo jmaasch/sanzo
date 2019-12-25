@@ -6,13 +6,12 @@ Authors@R:
            family = "Maasch",
            role = c("aut", "cre"),
            email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: Inspired by the art and color research of Sanzo Wada, his 
     Dictionary Of Color Combinations, and the incredible interactive site
     by Dain M. Blodorn Kim, this package brings Wada's color combinations
     to R for easy use in data visualizations. This package honors 60 of 
     Wada's color combinations: 20 duos, 20 trios, and 20 quads.
-License: GPL-3
+License: GNU General Public License v3 (GPL-3): https://www.tldrlegal.com/l/gpl-3.0
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/jmaasch/sanzo
