@@ -4,7 +4,7 @@
 \alias{sanzo.quad}
 \title{Generate four-colored palettes}
 \usage{
-sanzo.quad(paletteName)
+sanzo.quad(palette_name)
 }
 \arguments{
 \item{palette_name}{The short ID for the palette, e.g. "c263".}

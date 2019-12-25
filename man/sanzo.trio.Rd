@@ -4,7 +4,7 @@
 \alias{sanzo.trio}
 \title{Generate three-colored palettes}
 \usage{
-sanzo.trio(paletteName)
+sanzo.trio(palette_name)
 }
 \arguments{
 \item{palette_name}{The short ID for the palette, e.g. "c121".}

@@ -59,6 +59,6 @@ quads <- list(
 #'
 #' @export
 #'
-sanzo.quad <- function(paletteName) {
-  palette <- quads[[paletteName]]
+sanzo.quad <- function(palette_name) {
+  palette <- quads[[palette_name]]
 }

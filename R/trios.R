@@ -60,6 +60,6 @@ trios <- list(
 #'
 #' @export
 #'
-sanzo.trio <- function(paletteName) {
-  palette <- trios[[paletteName]]
+sanzo.trio <- function(palette_name) {
+  palette <- trios[[palette_name]]
 }
