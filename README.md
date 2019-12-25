@@ -10,8 +10,8 @@ An R package by JRMA Maasch (2019).
 
 1. **[About](#about):** Origins and inspirations.
 2. **[Usage](#usage):** &nbsp; [Installation.](#installation) &nbsp; | &nbsp; [Functions.](#all-functions) &nbsp; | &nbsp; [Demo.](#view-palette-demos-using-sanzodemo-functions) &nbsp; | &nbsp; [Base R.](#use-with-base-R) &nbsp; | &nbsp; [ggplot2.](#use-with-ggplot2) &nbsp; | &nbsp; [Gradient.](#use-as-a-continuous-color-palette) &nbsp; | &nbsp; [Customize.](#customize)
-3. **[ggplot2 gallery](#ggplot2-gallery):** [Scatter plots.](#scatter-plots) | [Bar plots.](#bar-plots) | [Violin plots.](#violin-plots) | [Gradient.](#gradient) | [Palette metadata.](#access-palette-metadata-with-sanzo.info-functions.)
-4. **[View full suite](#view-full-suite):** [Duo palettes.](#duo-palettes) | [Trio palettes.](#trio-palettes) | [Quad palettes.](#quad-palettes)
+3. **[ggplot2 gallery](#ggplot2-gallery):** &nbsp; [Scatter plots.](#scatter-plots) &nbsp; | [&nbsp; Bar plots.](#bar-plots) &nbsp; | &nbsp; [Violin plots.](#violin-plots) &nbsp; | &nbsp; [Gradient.](#gradient) &nbsp; | &nbsp; [Palette metadata.](#access-palette-metadata-with-sanzo.info-functions.)
+4. **[View full suite](#view-full-suite):** &nbsp; [Duo palettes.](#duo-palettes) &nbsp; | &nbsp; [Trio palettes.](#trio-palettes) &nbsp; | &nbsp; [Quad palettes.](#quad-palettes)
 
 # About
 
