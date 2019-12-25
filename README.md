@@ -8,8 +8,8 @@ An R package by JRMA Maasch (2019).
 
 ### Table of contents
 
-1. **[About](#about):** origins and inspirations.
-2. **[Usage](#usage):** [Installation.](#installation) | [Demo.](#wiew-palette-demos-using-sanzo.demo-functions) | [Base R.](#use-with-base-R) | [ggplot2.](#use-with-base-ggplot2) | [Gradient.](#use-as-a-continuous-color-palette) | [Customize.](#customize)
+1. **[About](#about):** Origins and inspirations.
+2. **[Usage](#usage):** [Installation.](#installation) | [Demo.](#view-palette-demos-using-sanzo.demo-functions) | [Base R.](#use-with-base-R) | [ggplot2.](#use-with-ggplot2) | [Gradient.](#use-as-a-continuous-color-palette) | [Customize.](#customize)
 3. **[ggplot2 gallery](#ggplot2-gallery):** [Scatter plots.](#scatter-plots) | [Bar plots.](#bar-plots) | [Violin plots.](#violin-plots) | [Gradient.](#gradient) | [Palette metadata.](#access-palette-metadata-with-sanzo.info-functions.)
 4. **[View full suite](#view-full-suite):** [Duo palettes.](#duo-palettes) | [Trio palettes.](#trio-palettes) | [Quad palettes.](#quad-palettes)
 
