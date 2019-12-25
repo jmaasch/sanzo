@@ -1,3 +1,5 @@
+#' Print demo plots for all duo palettes
+#'
 #' Print demo base R plots for all 20 duo palettes to illustrate
 #' their use and display hexadecimal values.
 #'
@@ -153,6 +155,8 @@ sanzo.demo2 <- function() {
 
 }
 
+#' Print demo plots for all trio palettes
+#'
 #' Print demo base R plots for all 20 trio palettes to illustrate
 #' their use and display hexadecimal values.
 #'
@@ -308,6 +312,8 @@ sanzo.demo3 <- function() {
 
 }
 
+#' Print demo plots for all quad palettes
+#'
 #' Print demo base R plots for all 20 quad palettes to illustrate
 #' their use and display hexadecimal values.
 #'
@@ -482,6 +488,8 @@ sanzo.demo4 <- function() {
 
 }
 
+#' Print demo plots for all palettes
+#'
 #' Print demo base R plots for all 60 sanzo palettes to illustrate
 #' their use and display hexadecimal values.
 #'

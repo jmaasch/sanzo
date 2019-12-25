@@ -2,7 +2,7 @@
 % Please edit documentation in R/duos.R
 \name{sanzo.duo}
 \alias{sanzo.duo}
-\title{Generate two-colored palettes.}
+\title{Generate two-colored palettes}
 \usage{
 sanzo.duo(palette_name)
 }
@@ -13,7 +13,7 @@ sanzo.duo(palette_name)
 Generate two-colored palettes.
 }
 \examples{
-# Save palette with name.
+# Assign palette to a name.
 my_palette <- sanzo.duo("c229")
 
 # Concatenate two duos for a custom quad.
@@ -25,7 +25,7 @@ custom_quad <- c(c033, c095)
 plot(df$x, df$y, col = sanzo.duo("c085"))
 
 # Use with ggplot2.
-ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) + 
+ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) +
    geom_bar(stat = "identity") +
    theme_few() +
    scale_fill_manual(values = sanzo.duo("c103"))

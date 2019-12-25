@@ -3,8 +3,7 @@
 \docType{data}
 \name{trios}
 \alias{trios}
-\title{List containing all 20 trio palettes, defined by
-hexadecimal values.}
+\title{List of trios}
 \format{An object of class \code{list} of length 20.}
 \usage{
 trios

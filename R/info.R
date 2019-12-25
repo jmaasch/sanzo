@@ -1,28 +1,30 @@
+#' See metadata for all duo palettes
+#'
 #' Create data frame containing long-form names, short-form IDs,
-#' hexadecimal values, and links to Dain M. Blodorn Kim's 
+#' hexadecimal values, and links to Dain M. Blodorn Kim's
 #' https://sanzo-wada.dmbk.io for all duo palettes.
-#' 
+#'
 #' @return Return data frame containing long-form names, short-form IDs,
 #' hex values, and URLs for all duos.
-#' 
+#'
 #' @examples
 #' duo_info_df <- sanzo.info2()
 #' print(sanzo.info2())
 #' knitr::kable(sanzo.info2())
-#' 
+#'
 #' @export
-#' 
+#'
 sanzo.info2 <- function() {
-  
-  long_names <- c("Combination 6", "Combination 7", "Combination 8", "Combination 33", 
-                  "Combination 35", "Combination 47", "Combination 70", "Combination 71", 
+
+  long_names <- c("Combination 6", "Combination 7", "Combination 8", "Combination 33",
+                  "Combination 35", "Combination 47", "Combination 70", "Combination 71",
                   "Combination 74", "Combination 79", "Combination 85", "Combination 91",
-                  "Combination 95", "Combination 102", "Combination 103", "Combination 106", 
+                  "Combination 95", "Combination 102", "Combination 103", "Combination 106",
                   "Combination 114", "Combination 118", "Combination 119", "Combination 229")
-  short_names <- c("c006", "c007", "c008", "c033", "c035", "c047", "c070", "c071", "c074", "c079", 
+  short_names <- c("c006", "c007", "c008", "c033", "c035", "c047", "c070", "c071", "c074", "c079",
                    "c085", "c091", "c095", "c102", "c103", "c106", "c114", "c118", "c119", "c229")
   hex <- c("#ff616b, #000831", "#ff5200, #b3e8c2", "#c2612c, #b8b8ff", "#b85e00, #1b3644",
-           "#b08699, #a10b2b", "#c9303e, #bfabcc", "#b85e00, #405416", "#a90636, #d99e73", 
+           "#b08699, #a10b2b", "#c9303e, #bfabcc", "#b85e00, #405416", "#a90636, #d99e73",
            "#b5ffc2, #2dbc94", "#651300, #2dbc94", "#c74300, #008aa1", "#5c2c45, #c05200",
            "#681916, #06004f", "#ebd999, #c05200", "#c2612c, #2d0060", "#008aa1, #06004f",
            "#ffab00, #008aa1", "#e0b81f, #362304", "#a6e6db, #0d2b52", "#172713, #b5d1cc")
@@ -36,35 +38,37 @@ sanzo.info2 <- function() {
            "https://sanzo-wada.dmbk.io/combination/103", "https://sanzo-wada.dmbk.io/combination/106",
            "https://sanzo-wada.dmbk.io/combination/114", "https://sanzo-wada.dmbk.io/combination/118",
            "https://sanzo-wada.dmbk.io/combination/119", "https://sanzo-wada.dmbk.io/combination/229")
-  
+
   df <- data.frame(long_names, short_names, hex, url)
   colnames(df) <- c("DUO PALETTE", "ID", "HEX VALUES", "URL")
   return(df)
-  
+
 }
 
+#' See metadata for all trio palettes
+#'
 #' Create data frame containing long-form names, short-form IDs,
-#' hexadecimal values, and links to Dain M. Blodorn Kim's 
+#' hexadecimal values, and links to Dain M. Blodorn Kim's
 #' https://sanzo-wada.dmbk.io for all trio palettes.
-#' 
+#'
 #' @return Return data frame containing long-form names, short-form IDs,
 #' hex values, and URLs for all trios.
-#' 
+#'
 #' @examples
 #' trio_info_df <- sanzo.info3()
 #' print(sanzo.info3())
 #' knitr::kable(sanzo.info3())
-#' 
+#'
 #' @export
-#' 
+#'
 sanzo.info3 <- function() {
-  
-  long_names <- c("Combination 121", "Combination 139", "Combination 142", "Combination 148", 
-                  "Combination 149", "Combination 157", "Combination 163", "Combination 171", 
+
+  long_names <- c("Combination 121", "Combination 139", "Combination 142", "Combination 148",
+                  "Combination 149", "Combination 157", "Combination 163", "Combination 171",
                   "Combination 172", "Combination 174", "Combination 194", "Combination 204",
-                  "Combination 205", "Combination 207", "Combination 223", "Combination 226", 
+                  "Combination 205", "Combination 207", "Combination 223", "Combination 226",
                   "Combination 232", "Combination 239", "Combination 240", "Combination 343")
-  short_names <- c("c121", "c139", "c142", "c148", "c149", "c157", "c163", "c171", "c172", "c174", 
+  short_names <- c("c121", "c139", "c142", "c148", "c149", "c157", "c163", "c171", "c172", "c174",
                    "c194", "c204", "c205", "c207", "c223", "c226", "c232", "c239", "c240", "c343")
   hex <- c("#6c2b11, #d99e73, #405416", "#96bfe6, #000831, #b5d1cc", "#9e194d, #baa600, #96bfe6",
            "#d1bd19, #ffab00, #29bdad", "#d1bd19, #ff5200, #0f261f", "#6f0043, #d1bd19, #4f8fe6",
@@ -72,8 +76,8 @@ sanzo.info3 <- function() {
            "#ffa6d9, #bfabcc, #6b2e63", "#fa2b00, #ffcfc4, #4f8fe6", "#b319ab, #c2612c, #a6e6db",
            "#730f1f, #f59994, #2619d1", "#9b5348, #b3e8c2, #000000", "#b08699, #d99e73, #b5ffc2",
            "#5c2c45, #ffb852, #2619d1", "#d60036, #f2ad78, #000831", "#b08699, #c4bf33, #b3e8c2",
-           "#ff788c, #ffff00, #29bdad", "#a93400, #ebd999, #505423") 
-  url <- c("https://sanzo-wada.dmbk.io/combination/121", "https://sanzo-wada.dmbk.io/combination/139", 
+           "#ff788c, #ffff00, #29bdad", "#a93400, #ebd999, #505423")
+  url <- c("https://sanzo-wada.dmbk.io/combination/121", "https://sanzo-wada.dmbk.io/combination/139",
            "https://sanzo-wada.dmbk.io/combination/142", "https://sanzo-wada.dmbk.io/combination/148",
            "https://sanzo-wada.dmbk.io/combination/149", "https://sanzo-wada.dmbk.io/combination/157",
            "https://sanzo-wada.dmbk.io/combination/163", "https://sanzo-wada.dmbk.io/combination/171",
@@ -83,35 +87,37 @@ sanzo.info3 <- function() {
            "https://sanzo-wada.dmbk.io/combination/223", "https://sanzo-wada.dmbk.io/combination/226",
            "https://sanzo-wada.dmbk.io/combination/232", "https://sanzo-wada.dmbk.io/combination/239",
            "https://sanzo-wada.dmbk.io/combination/240", "https://sanzo-wada.dmbk.io/combination/343")
-  
+
   df <- data.frame(long_names, short_names, hex, url)
   colnames(df) <- c("TRIO PALETTE", "ID", "HEX VALUES", "URL")
   return(df)
-  
+
 }
 
+#' See metadata for all quad palettes
+#'
 #' Create data frame containing long-form names, short-form IDs,
-#' hexadecimal values, and links to Dain M. Blodorn Kim's 
+#' hexadecimal values, and links to Dain M. Blodorn Kim's
 #' https://sanzo-wada.dmbk.io for all quad palettes.
-#' 
+#'
 #' @return Return data frame containing long-form names, short-form IDs,
 #' hex values, and URLs for all quads
-#' 
+#'
 #' @examples
 #' quad_info_df <- sanzo.info4()
 #' print(sanzo.info4())
 #' knitr::kable(sanzo.info4())
-#' 
+#'
 #' @export
-#' 
+#'
 sanzo.info4 <- function() {
-  
-  long_names <- c("Combination 249", "Combination 252", "Combination 263", "Combination 268", 
-                  "Combination 271", "Combination 273", "Combination 279", "Combination 283", 
+
+  long_names <- c("Combination 249", "Combination 252", "Combination 263", "Combination 268",
+                  "Combination 271", "Combination 273", "Combination 279", "Combination 283",
                   "Combination 289", "Combination 293", "Combination 296", "Combination 302",
-                  "Combination 310", "Combination 321", "Combination 329", "Combination 330", 
+                  "Combination 310", "Combination 321", "Combination 329", "Combination 330",
                   "Combination 332", "Combination 339", "Combination 341", "Combination 348")
-  short_names <- c("c249", "c252", "c263", "c268", "c271", "c273", "c279", "c283", "c289", "c293", 
+  short_names <- c("c249", "c252", "c263", "c268", "c271", "c273", "c279", "c283", "c289", "c293",
                    "c296", "c302", "c310", "c321", "c329", "c330", "c332", "c339", "c341", "c348")
   hex <- c("#681916, #c0b490, #d1bd19, #417777", "#e62e73, #b85e00, #baa600, #2dbc94",
            "#a93400, #f2ad78, #b5ffc2, #1b3644", "#b08699, #b85e00, #172713, #bfffe6",
@@ -133,35 +139,37 @@ sanzo.info4 <- function() {
            "https://sanzo-wada.dmbk.io/combination/329", "https://sanzo-wada.dmbk.io/combination/330",
            "https://sanzo-wada.dmbk.io/combination/332", "https://sanzo-wada.dmbk.io/combination/339",
            "https://sanzo-wada.dmbk.io/combination/341", "https://sanzo-wada.dmbk.io/combination/348")
-  
+
   df <- data.frame(long_names, short_names, hex, url)
   colnames(df) <- c("QUAD PALETTE", "ID", "HEX VALUES", "URL")
   return(df)
-  
+
 }
 
+#' See metadata for all palettes
+#'
 #' Create data frame containing long-form names, short-form IDs,
-#' hexadecimal values, and links to Dain M. Blodorn Kim's 
+#' hexadecimal values, and links to Dain M. Blodorn Kim's
 #' https://sanzo-wada.dmbk.io for all sanzo palettes.
-#' 
+#'
 #' @return Return data frame containing long-form names, short-form IDs,
 #' hex values, and URLs for all sanzo palettes.
-#' 
+#'
 #' @examples
 #' info_df <- sanzo.info.all()
 #' print(sanzo.info.all())
 #' knitr::kable(sanzo.info.all())
-#' 
+#'
 #' @export
-#' 
+#'
 sanzo.info.all <- function() {
-  
+
   d <- sanzo.info2()
   t <- sanzo.info3()
   q <- sanzo.info4()
-  
+
   df <- merge(d, t, all = TRUE)
   df <- merge(df, q, all = TRUE)
   return(df)
-  
+
 }

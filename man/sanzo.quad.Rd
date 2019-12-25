@@ -2,7 +2,7 @@
 % Please edit documentation in R/quads.R
 \name{sanzo.quad}
 \alias{sanzo.quad}
-\title{Generate four-colored palettes.}
+\title{Generate four-colored palettes}
 \usage{
 sanzo.quad(paletteName)
 }
@@ -13,7 +13,7 @@ sanzo.quad(paletteName)
 Generate four-colored palettes.
 }
 \examples{
-# Save palette with name.
+# Assign palette to a name.
 my_palette <- sanzo.quad("c252")
 
 # Concatenate two quads for a custom eight-colored palette.
@@ -25,7 +25,7 @@ custom_eight <- c(c348, c341)
 plot(df$x, df$y, col = sanzo.quad("c341"))
 
 # Use with ggplot2.
-ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) + 
+ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) +
    geom_bar(stat = "identity") +
    theme_few() +
    scale_fill_manual(values = sanzo.quad("c296"))

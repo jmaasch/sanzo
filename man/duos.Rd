@@ -3,8 +3,7 @@
 \docType{data}
 \name{duos}
 \alias{duos}
-\title{List containing all 20 duo palettes, defined by
-hexadecimal values.}
+\title{List of duos}
 \format{An object of class \code{list} of length 20.}
 \usage{
 duos

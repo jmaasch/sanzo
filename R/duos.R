@@ -1,8 +1,10 @@
+#' List of duos
+#'
 #' List containing all 20 duo palettes, defined by
 #' hexadecimal values.
-#' 
+#'
 #' @export
-#' 
+#'
 duos <- list(
   c006 = c("#ff616b", "#000831"),
   c007 = c("#ff5200", "#b3e8c2"),
@@ -26,36 +28,38 @@ duos <- list(
   c229 = c("#172713", "#b5d1cc")
 )
 
+#' Generate two-colored palettes
+#'
 #' Generate two-colored palettes.
-#' 
+#'
 #' @param palette_name The short ID for the palette, e.g. "c006".
-#' 
+#'
 #' @examples
-#' # Save palette with name.
+#' # Assign palette to a name.
 #' my_palette <- sanzo.duo("c229")
-#' 
+#'
 #' # Concatenate two duos for a custom quad.
 #' c033 <- sanzo.duo("c033")
 #' c095 <- sanzo.duo("c095")
 #' custom_quad <- c(c033, c095)
-#' 
+#'
 #' # Use with base R.
 #' plot(df$x, df$y, col = sanzo.duo("c085"))
-#' 
+#'
 #' # Use with ggplot2.
-#' ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) + 
+#' ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) +
 #'    geom_bar(stat = "identity") +
 #'    theme_few() +
 #'    scale_fill_manual(values = sanzo.duo("c103"))
-#' 
+#'
 #' # Use as gradient.
 #' ggplot(faithfuld, aes(waiting, eruptions)) +
 #'    geom_raster(aes(fill = density), interpolate = TRUE) +
 #'    theme_few() +
 #'    scale_fill_gradientn(colors = sanzo.duo("c102"))
-#' 
+#'
 #' @export
-#' 
+#'
 sanzo.duo <- function(palette_name) {
   palette <- duos[[palette_name]]
 }

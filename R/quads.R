@@ -1,6 +1,8 @@
+#' List of quads
+#'
 #' List containing all 20 quad palettes, defined by
 #' hexadecimal values.
-#' 
+#'
 #' @export
 quads <- list(
   c249 = c("#681916", "#c0b490", "#d1bd19", "#417777"),
@@ -25,36 +27,38 @@ quads <- list(
   c348 = c("#bcd382", "#328e13", "#172713", "#340059")
 )
 
+#' Generate four-colored palettes
+#'
 #' Generate four-colored palettes.
-#' 
+#'
 #' @param palette_name The short ID for the palette, e.g. "c263".
-#' 
+#'
 #' @examples
-#' # Save palette with name.
+#' # Assign palette to a name.
 #' my_palette <- sanzo.quad("c252")
-#' 
+#'
 #' # Concatenate two quads for a custom eight-colored palette.
 #' c348 <- sanzo.quad("c348")
 #' c341 <- sanzo.quad("c341")
 #' custom_eight <- c(c348, c341)
-#' 
+#'
 #' # Use with base R.
 #' plot(df$x, df$y, col = sanzo.quad("c341"))
-#' 
+#'
 #' # Use with ggplot2.
-#' ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) + 
+#' ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) +
 #'    geom_bar(stat = "identity") +
 #'    theme_few() +
 #'    scale_fill_manual(values = sanzo.quad("c296"))
-#' 
+#'
 #' # Use as gradient.
 #' ggplot(faithfuld, aes(waiting, eruptions)) +
 #'    geom_raster(aes(fill = density), interpolate = TRUE) +
 #'    theme_few() +
 #'    scale_fill_gradientn(colors = sanzo.quad("c302"))
-#' 
+#'
 #' @export
-#' 
+#'
 sanzo.quad <- function(paletteName) {
   palette <- quads[[paletteName]]
 }

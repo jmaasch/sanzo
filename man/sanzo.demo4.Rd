@@ -2,8 +2,7 @@
 % Please edit documentation in R/demo.R
 \name{sanzo.demo4}
 \alias{sanzo.demo4}
-\title{Print demo base R plots for all 20 quad palettes to illustrate
-their use and display hexadecimal values.}
+\title{Print demo plots for all quad palettes}
 \usage{
 sanzo.demo4()
 }

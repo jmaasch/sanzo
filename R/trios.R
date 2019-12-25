@@ -1,8 +1,10 @@
+#' List of trios
+#'
 #' List containing all 20 trio palettes, defined by
 #' hexadecimal values.
-#' 
+#'
 #' @export
-#' 
+#'
 trios <- list(
   c121 = c("#6c2b11", "#d99e73", "#405416"),
   c139 = c("#96bfe6", "#000831", "#b5d1cc"),
@@ -26,36 +28,38 @@ trios <- list(
   c343 = c("#a93400", "#ebd999", "#505423")
 )
 
+#' Generate three-colored palettes
+#'
 #' Generate three-colored palettes.
-#' 
+#'
 #' @param palette_name The short ID for the palette, e.g. "c121".
-#' 
+#'
 #' @examples
-#' # Save palette with name.
+#' # Assign palette to a name.
 #' my_palette <- sanzo.trio("c223")
-#' 
+#'
 #' # Concatenate two trios for a custom six-colored palette.
 #' c207 <- sanzo.trio("c207")
 #' c226 <- sanzo.trio("c226")
 #' custom_six <- c(c207, c226)
-#' 
+#'
 #' # Use with base R.
 #' plot(df$x, df$y, col = sanzo.trio("c343"))
-#' 
+#'
 #' # Use with ggplot2.
-#' ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) + 
+#' ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) +
 #'    geom_bar(stat = "identity") +
 #'    theme_few() +
 #'    scale_fill_manual(values = sanzo.trio("c172"))
-#' 
+#'
 #' # Use as gradient.
 #' ggplot(faithfuld, aes(waiting, eruptions)) +
 #'    geom_raster(aes(fill = density), interpolate = TRUE) +
 #'    theme_few() +
 #'    scale_fill_gradientn(colors = sanzo.trio("c240"))
-#' 
+#'
 #' @export
-#' 
+#'
 sanzo.trio <- function(paletteName) {
   palette <- trios[[paletteName]]
 }

@@ -2,7 +2,7 @@
 % Please edit documentation in R/trios.R
 \name{sanzo.trio}
 \alias{sanzo.trio}
-\title{Generate three-colored palettes.}
+\title{Generate three-colored palettes}
 \usage{
 sanzo.trio(paletteName)
 }
@@ -13,7 +13,7 @@ sanzo.trio(paletteName)
 Generate three-colored palettes.
 }
 \examples{
-# Save palette with name.
+# Assign palette to a name.
 my_palette <- sanzo.trio("c223")
 
 # Concatenate two trios for a custom six-colored palette.
@@ -25,7 +25,7 @@ custom_six <- c(c207, c226)
 plot(df$x, df$y, col = sanzo.trio("c343"))
 
 # Use with ggplot2.
-ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) + 
+ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) +
    geom_bar(stat = "identity") +
    theme_few() +
    scale_fill_manual(values = sanzo.trio("c172"))

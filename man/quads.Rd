@@ -3,8 +3,7 @@
 \docType{data}
 \name{quads}
 \alias{quads}
-\title{List containing all 20 quad palettes, defined by
-hexadecimal values.}
+\title{List of quads}
 \format{An object of class \code{list} of length 20.}
 \usage{
 quads

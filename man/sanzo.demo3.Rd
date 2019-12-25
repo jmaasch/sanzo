@@ -2,8 +2,7 @@
 % Please edit documentation in R/demo.R
 \name{sanzo.demo3}
 \alias{sanzo.demo3}
-\title{Print demo base R plots for all 20 trio palettes to illustrate
-their use and display hexadecimal values.}
+\title{Print demo plots for all trio palettes}
 \usage{
 sanzo.demo3()
 }

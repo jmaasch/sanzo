@@ -2,8 +2,7 @@
 % Please edit documentation in R/demo.R
 \name{sanzo.demo2}
 \alias{sanzo.demo2}
-\title{Print demo base R plots for all 20 duo palettes to illustrate
-their use and display hexadecimal values.}
+\title{Print demo plots for all duo palettes}
 \usage{
 sanzo.demo2()
 }

@@ -2,9 +2,7 @@
 % Please edit documentation in R/info.R
 \name{sanzo.info2}
 \alias{sanzo.info2}
-\title{Create data frame containing long-form names, short-form IDs,
-hexadecimal values, and links to Dain M. Blodorn Kim's 
-https://sanzo-wada.dmbk.io for all duo palettes.}
+\title{See metadata for all duo palettes}
 \usage{
 sanzo.info2()
 }
@@ -14,7 +12,7 @@ hex values, and URLs for all duos.
 }
 \description{
 Create data frame containing long-form names, short-form IDs,
-hexadecimal values, and links to Dain M. Blodorn Kim's 
+hexadecimal values, and links to Dain M. Blodorn Kim's
 https://sanzo-wada.dmbk.io for all duo palettes.
 }
 \examples{

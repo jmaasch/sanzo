@@ -2,9 +2,7 @@
 % Please edit documentation in R/info.R
 \name{sanzo.info4}
 \alias{sanzo.info4}
-\title{Create data frame containing long-form names, short-form IDs,
-hexadecimal values, and links to Dain M. Blodorn Kim's 
-https://sanzo-wada.dmbk.io for all quad palettes.}
+\title{See metadata for all quad palettes}
 \usage{
 sanzo.info4()
 }
@@ -14,7 +12,7 @@ hex values, and URLs for all quads
 }
 \description{
 Create data frame containing long-form names, short-form IDs,
-hexadecimal values, and links to Dain M. Blodorn Kim's 
+hexadecimal values, and links to Dain M. Blodorn Kim's
 https://sanzo-wada.dmbk.io for all quad palettes.
 }
 \examples{

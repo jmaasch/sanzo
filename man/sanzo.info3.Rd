@@ -2,9 +2,7 @@
 % Please edit documentation in R/info.R
 \name{sanzo.info3}
 \alias{sanzo.info3}
-\title{Create data frame containing long-form names, short-form IDs,
-hexadecimal values, and links to Dain M. Blodorn Kim's 
-https://sanzo-wada.dmbk.io for all trio palettes.}
+\title{See metadata for all trio palettes}
 \usage{
 sanzo.info3()
 }
@@ -14,7 +12,7 @@ hex values, and URLs for all trios.
 }
 \description{
 Create data frame containing long-form names, short-form IDs,
-hexadecimal values, and links to Dain M. Blodorn Kim's 
+hexadecimal values, and links to Dain M. Blodorn Kim's
 https://sanzo-wada.dmbk.io for all trio palettes.
 }
 \examples{
