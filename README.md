@@ -79,7 +79,6 @@ Use with ```scale_fill_manual``` or ```scale_color_manual```.
 ```R
 ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) + 
     geom_bar(stat = "identity") +
-    theme_few() +
     scale_fill_manual(values = sanzo.duo("c103"))
 ```
 
@@ -90,7 +89,6 @@ By default, ```sanzo``` palettes are discrete. There are multiple ways to achiev
 ```R
 ggplot(faithfuld, aes(waiting, eruptions)) +
     geom_raster(aes(fill = density), interpolate = TRUE) +
-    theme_few() +
     scale_fill_gradientn(colors = sanzo.duo("c102")) 
 ```
 
