@@ -57,24 +57,19 @@ sanzo.demo.all()
 To view the output of these functions, see 
 **[Full suite](#full-suite):** [Duo palettes.](#duo-palettes) | [Trio palettes.](#trio-palettes) | [Quad palettes.](#quad-palettes)
 
-#### Assign palette to a name.
-
-Assignment is optional. Examples of direct use in base R and ggplot2 figures are shown below.
-
-```R
-my_duo <- sanzo.duo("c229")
-my_trio <- sanzo.trio("c223")
-my_quad <- sanzo.quad("c252")
-```
-
 #### Use with base R.
 
  ```R
-# When using directly.
-plot(df$x, df$y, col = sanzo.duo("c085"))
+# Assign palette to a name if desired.
+my_duo <- sanzo.duo("c229")
+my_trio <- sanzo.trio("c223")
+my_quad <- sanzo.quad("c252")
 
-# When palette has been assigned to a name.
+# Use palette that has been assigned to a name.
 plot(df$x, df$y, col = my_quad)
+
+# Use directly.
+plot(df$x, df$y, col = sanzo.duo("c085"))
  ```
  
 #### Use with ```ggplot2```.
@@ -128,6 +123,8 @@ c033 <- sanzo.duo("c033")
 c095 <- sanzo.duo("c095")
 custom_quad <- c(c033, c095)
 ```
+
+For a more muted color palette, select an alpha less than 1. In the plot at right, ```alpha = 5/6```.
 
 &#8593; [return to top](#sanzo)
 
