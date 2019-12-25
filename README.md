@@ -141,7 +141,7 @@ For a more muted color palette, select an alpha less than 1. In the plot at righ
 
 ### Violin plots.
 
-<img src="https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/violin.png" width="600" align="middle"/>
+<img src="https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/violin.png" width="750" align="middle"/>
 
 ### Bar plots.
 
