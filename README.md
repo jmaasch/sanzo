@@ -26,7 +26,7 @@ Inspired by the art and color research of Sanzo Wada, his <a href="http://seigen
 
 # Usage
 
-#### Installation
+### Installation.
 
 ```R
 # Install package.
@@ -36,7 +36,7 @@ devtools::install_github("jmaasch/sanzo")
 library(sanzo)
 ```
 
-#### All functions.
+### All functions.
 
 * ```sanzo.duo()``` : create duo palette
 * ```sanzo.trio()``` : create trio palette
@@ -50,7 +50,7 @@ library(sanzo)
 * ```sanzo.info4()``` : generate dataframe of hexadecimals and urls for all quad palettes
 * ```sanzo.info.all()``` : generate dataframe of hexadecimals and urls for all palettes
 
-#### View palette demos using ```sanzo.demo``` functions.
+### View palette demos using ```sanzo.demo``` functions.
 
 To illustrate their potential, each color combination can be demo'd via base R scatter and bar plots.
 
@@ -71,7 +71,7 @@ sanzo.demo.all()
 To view the output of these functions, see 
 **[Full suite](#full-suite):** [Duo palettes.](#duo-palettes) | [Trio palettes.](#trio-palettes) | [Quad palettes.](#quad-palettes)
 
-#### Use with base R.
+### Use with base R.
 
  ```R
 # Assign palette to a name if desired.
@@ -86,7 +86,7 @@ plot(df$x, df$y, col = my_quad)
 plot(df$x, df$y, col = sanzo.duo("c085"))
  ```
  
-#### Use with ```ggplot2```.
+### Use with ```ggplot2```.
 
 ```R
 ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) + 
@@ -95,7 +95,7 @@ ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) +
     scale_fill_manual(values = sanzo.duo("c103"))
 ```
 
-#### Use as a continuous color palette.
+### Use as a continuous color palette.
 
 By default, ```sanzo``` palettes are discrete. Using ```scale_fill_gradientn``` or ```scale_color_gradientn``` in ```ggplot2``` allows you to use any ```sanzo``` palette as a continuous gradient.
 
@@ -108,7 +108,7 @@ ggplot(faithfuld, aes(waiting, eruptions)) +
 
 See example visualizations [here.](#gradient)
 
-#### Access palette metadata with ```sanzo.info``` functions.
+### Access palette metadata with ```sanzo.info``` functions.
 
 These functions return a data frame containing long-form names, short-form IDs, hexadecimal values, and links to Dain M. Blodorn Kim's https://sanzo-wada.dmbk.io for further information.
 
@@ -128,7 +128,7 @@ knitr::kable(sanzo.info.all())
 
 <img src="https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/concat.png" width="500" align="right"/>
 
-#### Customize.
+### Customize.
 
 Concatenate multiple palettes to make a custom palette or cherry-pick individual colors. All hexadecimals are provided by the ```sanzo.demo``` functions and ```sanzo.info``` functions.
 
