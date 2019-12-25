@@ -103,17 +103,17 @@ quads <- list(
 ```
 
 # Functions.
-* **sanzo.duo()**   : create duo palette
-* **sanzo.trio()**   : create trio palette
-* **sanzo.quad()**   : create quad palette
-* **sanzo.demo2()**    : print demo plots for all duo palettes
-* **sanzo.demo3()**    : print demo plots for all trio palettes
-* **sanzo.demo4()**    : print demo plots for all quad palettes
-* **sanzo.demo.all()** : print demo plots for all palettes
-* **sanzo.info2()**    : generate dataframe of hexadecimals and urls for all duo palettes
-* **sanzo.info3()**    : generate dataframe of hexadecimals and urls for all trio palettes
-* **sanzo.info4()**    : generate dataframe of hexadecimals and urls for all quad palettes
-* **sanzo.info.all()** : generate dataframe of hexadecimals and urls for all palettes
+* ```sanzo.duo()``` : create duo palette
+* ```sanzo.trio()``` : create trio palette
+* ```sanzo.quad()``` : create quad palette
+* ```sanzo.demo2()``` : print demo plots for all duo palettes
+* ```sanzo.demo3()``` : print demo plots for all trio palettes
+* ```sanzo.demo4()``` : print demo plots for all quad palettes
+* ```sanzo.demo.all()``` : print demo plots for all palettes
+* ```sanzo.info2()``` : generate dataframe of hexadecimals and urls for all duo palettes
+* ```sanzo.info3()``` : generate dataframe of hexadecimals and urls for all trio palettes
+* ```sanzo.info4()``` : generate dataframe of hexadecimals and urls for all quad palettes
+* ```sanzo.info.all()``` : generate dataframe of hexadecimals and urls for all palettes
 
 ```{r functions, echo = FALSE}
 
