@@ -83,7 +83,7 @@ ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) +
 
 ### Use as a continuous color palette.
 
-By default, ```sanzo``` palettes are discrete. Using ```scale_fill_gradientn``` or ```scale_color_gradientn``` in ```ggplot2``` allows you to use any ```sanzo``` palette as a continuous gradient.
+By default, ```sanzo``` palettes are discrete. There are multiple ways to achieve a gradient. For example, using ```scale_fill_gradientn``` or ```scale_color_gradientn``` in ```ggplot2``` allows you to use any ```sanzo``` palette as a continuous gradient.
 
 ```R
 ggplot(faithfuld, aes(waiting, eruptions)) +
