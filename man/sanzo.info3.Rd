@@ -18,6 +18,5 @@ https://sanzo-wada.dmbk.io for all trio palettes.
 \examples{
 trio_info_df <- sanzo.info3()
 print(sanzo.info3())
-knitr::kable(sanzo.info3())
 
 }

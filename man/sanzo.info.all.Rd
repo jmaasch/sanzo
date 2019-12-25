@@ -18,6 +18,5 @@ https://sanzo-wada.dmbk.io for all sanzo palettes.
 \examples{
 info_df <- sanzo.info.all()
 print(sanzo.info.all())
-knitr::kable(sanzo.info.all())
 
 }

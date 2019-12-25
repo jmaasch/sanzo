@@ -18,6 +18,5 @@ https://sanzo-wada.dmbk.io for all duo palettes.
 \examples{
 duo_info_df <- sanzo.info2()
 print(sanzo.info2())
-knitr::kable(sanzo.info2())
 
 }

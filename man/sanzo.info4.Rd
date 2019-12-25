@@ -18,6 +18,5 @@ https://sanzo-wada.dmbk.io for all quad palettes.
 \examples{
 quad_info_df <- sanzo.info4()
 print(sanzo.info4())
-knitr::kable(sanzo.info4())
 
 }
