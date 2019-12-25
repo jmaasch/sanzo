@@ -9,7 +9,7 @@ An R package by JRMA Maasch (2019).
 ### Table of contents
 
 1. **[About](#about):** Origins and inspirations.
-2. **[Usage](#usage):** [Installation.](#installation) | [Demo.](#view-palette-demos-using-sanzodemo-functions) | [Base R.](#use-with-base-R) | [ggplot2.](#use-with-ggplot2) | [Gradient.](#use-as-a-continuous-color-palette) | [Customize.](#customize)
+2. **[Usage](#usage):** [Installation.](#installation) | [Functions.](#all-functions) | [Demo.](#view-palette-demos-using-sanzodemo-functions) | [Base R.](#use-with-base-R) | [ggplot2.](#use-with-ggplot2) | [Gradient.](#use-as-a-continuous-color-palette) | [Customize.](#customize)
 3. **[ggplot2 gallery](#ggplot2-gallery):** [Scatter plots.](#scatter-plots) | [Bar plots.](#bar-plots) | [Violin plots.](#violin-plots) | [Gradient.](#gradient) | [Palette metadata.](#access-palette-metadata-with-sanzo.info-functions.)
 4. **[View full suite](#view-full-suite):** [Duo palettes.](#duo-palettes) | [Trio palettes.](#trio-palettes) | [Quad palettes.](#quad-palettes)
 
@@ -35,6 +35,20 @@ devtools::install_github("jmaasch/sanzo")
 # Load.
 library(sanzo)
 ```
+
+#### All functions.
+
+* sanzo.duo() : create duo palette
+* sanzo.trio() : create trio palette
+* sanzo.quad() : create quad palette
+* sanzo.demo2() : print demo plots for all duo palettes
+* sanzo.demo3() : print demo plots for all trio palettes
+* sanzo.demo4() : print demo plots for all quad palettes
+* sanzo.demo.all() : print demo plots for all palettes
+* sanzo.info2() : generate dataframe of hexadecimals and urls for all duo palettes
+* sanzo.info3() : generate dataframe of hexadecimals and urls for all trio palettes
+* sanzo.info4() : generate dataframe of hexadecimals and urls for all quad palettes
+* sanzo.info.all() : generate dataframe of hexadecimals and urls for all palettes
 
 #### View palette demos using ```sanzo.demo``` functions.
 
