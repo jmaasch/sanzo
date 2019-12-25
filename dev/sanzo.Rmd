@@ -736,11 +736,9 @@ sanzo.info.all <- function() {
   
 }
 
-
-print(sanzo.info.all())
-print(sanzo.info2())
 knitr::kable(sanzo.info2())
-knitr::kable(sanzo.info.all())
+knitr::kable(sanzo.info3())
+knitr::kable(sanzo.info4())
 
 
 
