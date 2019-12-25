@@ -132,11 +132,9 @@ For a more muted color palette, select an alpha less than 1. In the plot at righ
 
 ### Scatter plots.
 
-|   |   |
-|:-------------------------:|:-------------------------:|
-|**Combination 205, ```alpha = 3/4.```***|**Combination 194, ```alpha = 3/4.```***|
+|**Combination 205, ```alpha = 3/4.```**|**Combination 194, ```alpha = 3/4.```**|
 |![scatter1](https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/scatter1.png)|![scatter2](https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/scatter2.png)|
-|**Combination 121, ```alpha = 3/4.```***|**Combination 172, ```alpha = 3/4.```***|
+|**Combination 121, ```alpha = 3/4.```**|**Combination 172, ```alpha = 3/4.```**|
 |![scatter3](https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/scatter3.png)|![scatter4](https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/scatter5.png)|
 
 ### Violin plots.
