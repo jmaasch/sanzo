@@ -10,7 +10,6 @@
 #' @examples
 #' duo_info_df <- sanzo.info2()
 #' print(sanzo.info2())
-#' knitr::kable(sanzo.info2())
 #'
 #' @export
 #'
@@ -57,7 +56,6 @@ sanzo.info2 <- function() {
 #' @examples
 #' trio_info_df <- sanzo.info3()
 #' print(sanzo.info3())
-#' knitr::kable(sanzo.info3())
 #'
 #' @export
 #'
@@ -106,7 +104,6 @@ sanzo.info3 <- function() {
 #' @examples
 #' quad_info_df <- sanzo.info4()
 #' print(sanzo.info4())
-#' knitr::kable(sanzo.info4())
 #'
 #' @export
 #'
@@ -158,7 +155,6 @@ sanzo.info4 <- function() {
 #' @examples
 #' info_df <- sanzo.info.all()
 #' print(sanzo.info.all())
-#' knitr::kable(sanzo.info.all())
 #'
 #' @export
 #'
