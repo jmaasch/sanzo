@@ -74,6 +74,8 @@ plot(df$x, df$y, col = sanzo.duo("c085"))
  
 ### Use with ```ggplot2```.
 
+Use with ```scale_fill_manual``` or ```scale_color_manual```.
+
 ```R
 ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) + 
     geom_bar(stat = "identity") +
