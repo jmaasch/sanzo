@@ -38,7 +38,7 @@ library(sanzo)
 
 #### View palette demos using ```sanzo.demo``` functions.
 
-To illustrate the potential of each palette, each color combination can be demo'd via base R scatter and bar plots.
+To illustrate their potential, each color combination can be demo'd via base R scatter and bar plots.
 
 ```R
 # Print demo plots for duos.
@@ -134,7 +134,9 @@ For a more muted color palette, select an alpha less than 1. In the plot at righ
 
 |   |   |
 |:-------------------------:|:-------------------------:|
+|**Combination 205, ```alpha = 3/4.```***|**Combination 194, ```alpha = 3/4.```***|
 |![scatter1](https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/scatter1.png)|![scatter2](https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/scatter2.png)|
+|**Combination 121, ```alpha = 3/4.```***|**Combination 172, ```alpha = 3/4.```***|
 |![scatter3](https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/scatter3.png)|![scatter4](https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/scatter5.png)|
 
 ### Violin plots.
