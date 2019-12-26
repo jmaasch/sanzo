@@ -34,6 +34,8 @@ duos <- list(
 #'
 #' @param palette_name The short ID for the palette, e.g. "c006".
 #'
+#' @return A vector of hexademicals of length 2.
+#'
 #' @examples
 #' # Assign palette to a name.
 #' my_palette <- sanzo.duo("c229")
@@ -44,7 +46,7 @@ duos <- list(
 #' custom_quad <- c(c033, c095)
 #'
 #' # Use with base R.
-#' plot(df$x, df$y, col = sanzo.duo("c085"))
+#' plot(iris$Sepal.Width, iris$Sepal.Length, col = sanzo.duo("c085"))
 #'
 #' # Use with ggplot2.
 #' ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) +
@@ -62,4 +64,5 @@ duos <- list(
 #'
 sanzo.duo <- function(palette_name) {
   palette <- duos[[palette_name]]
+  return(palette)
 }

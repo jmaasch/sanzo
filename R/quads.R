@@ -33,6 +33,8 @@ quads <- list(
 #'
 #' @param palette_name The short ID for the palette, e.g. "c263".
 #'
+#' @return A vector of hexademicals of length 3.
+#'
 #' @examples
 #' # Assign palette to a name.
 #' my_palette <- sanzo.quad("c252")
@@ -43,7 +45,7 @@ quads <- list(
 #' custom_eight <- c(c348, c341)
 #'
 #' # Use with base R.
-#' plot(df$x, df$y, col = sanzo.quad("c341"))
+#' plot(iris$Sepal.Width, iris$Sepal.Length, col = sanzo.quad("c341"))
 #'
 #' # Use with ggplot2.
 #' ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) +
@@ -61,4 +63,5 @@ quads <- list(
 #'
 sanzo.quad <- function(palette_name) {
   palette <- quads[[palette_name]]
+  return(palette)
 }

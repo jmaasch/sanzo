@@ -34,6 +34,8 @@ trios <- list(
 #'
 #' @param palette_name The short ID for the palette, e.g. "c121".
 #'
+#' @return A vector of hexademicals of length 3.
+#'
 #' @examples
 #' # Assign palette to a name.
 #' my_palette <- sanzo.trio("c223")
@@ -44,7 +46,7 @@ trios <- list(
 #' custom_six <- c(c207, c226)
 #'
 #' # Use with base R.
-#' plot(df$x, df$y, col = sanzo.trio("c343"))
+#' plot(iris$Sepal.Width, iris$Sepal.Length, col = sanzo.trio("c343"))
 #'
 #' # Use with ggplot2.
 #' ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) +
@@ -62,4 +64,5 @@ trios <- list(
 #'
 sanzo.trio <- function(palette_name) {
   palette <- trios[[palette_name]]
+  return(palette)
 }
