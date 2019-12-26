@@ -32,7 +32,7 @@ duos <- list(
 #'
 #' Generate two-colored palettes.
 #'
-#' @param palette_name The short ID for the palette, e.g. "c006".
+#' @param palette_name The short ID for the palette, e.g. "c006". For full list of duo IDs, use sanzo.info2().
 #'
 #' @return A vector of hexademicals of length 2.
 #'
@@ -46,19 +46,13 @@ duos <- list(
 #' custom_quad <- c(c033, c095)
 #'
 #' # Use with base R.
-#' plot(iris$Sepal.Width, iris$Sepal.Length, col = sanzo.duo("c085"))
+#' plot(iris$Sepal.Width,
+#'      iris$Sepal.Length,
+#'      col = sanzo.duo("c085"))
 #'
-#' # Use with ggplot2.
-#' ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) +
-#'    geom_bar(stat = "identity") +
-#'    theme_few() +
-#'    scale_fill_manual(values = sanzo.duo("c103"))
+#' # For examples of use with ggplot2, see https://github.com/jmaasch/sanzo.
 #'
-#' # Use as gradient.
-#' ggplot(faithfuld, aes(waiting, eruptions)) +
-#'    geom_raster(aes(fill = density), interpolate = TRUE) +
-#'    theme_few() +
-#'    scale_fill_gradientn(colors = sanzo.duo("c102"))
+#' # For examples of use as a gradient, see https://github.com/jmaasch/sanzo.
 #'
 #' @export
 #'

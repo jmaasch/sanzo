@@ -31,7 +31,7 @@ quads <- list(
 #'
 #' Generate four-colored palettes.
 #'
-#' @param palette_name The short ID for the palette, e.g. "c263".
+#' @param palette_name The short ID for the palette, e.g. "c263". For full list of quad IDs, use sanzo.info4().
 #'
 #' @return A vector of hexademicals of length 3.
 #'
@@ -45,19 +45,13 @@ quads <- list(
 #' custom_eight <- c(c348, c341)
 #'
 #' # Use with base R.
-#' plot(iris$Sepal.Width, iris$Sepal.Length, col = sanzo.quad("c341"))
+#' plot(iris$Sepal.Width,
+#'      iris$Sepal.Length,
+#'      col = sanzo.quad("c341"))
 #'
-#' # Use with ggplot2.
-#' ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) +
-#'    geom_bar(stat = "identity") +
-#'    theme_few() +
-#'    scale_fill_manual(values = sanzo.quad("c296"))
+#' # For examples of use with ggplot2, see https://github.com/jmaasch/sanzo.
 #'
-#' # Use as gradient.
-#' ggplot(faithfuld, aes(waiting, eruptions)) +
-#'    geom_raster(aes(fill = density), interpolate = TRUE) +
-#'    theme_few() +
-#'    scale_fill_gradientn(colors = sanzo.quad("c302"))
+#' # For examples of use as a gradient, see https://github.com/jmaasch/sanzo.
 #'
 #' @export
 #'

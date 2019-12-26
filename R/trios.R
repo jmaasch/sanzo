@@ -32,7 +32,7 @@ trios <- list(
 #'
 #' Generate three-colored palettes.
 #'
-#' @param palette_name The short ID for the palette, e.g. "c121".
+#' @param palette_name The short ID for the palette, e.g. "c121". For full list of trio IDs, use sanzo.info3().
 #'
 #' @return A vector of hexademicals of length 3.
 #'
@@ -46,19 +46,13 @@ trios <- list(
 #' custom_six <- c(c207, c226)
 #'
 #' # Use with base R.
-#' plot(iris$Sepal.Width, iris$Sepal.Length, col = sanzo.trio("c343"))
+#' plot(iris$Sepal.Width,
+#'      iris$Sepal.Length,
+#'      col = sanzo.trio("c343"))
 #'
-#' # Use with ggplot2.
-#' ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) +
-#'    geom_bar(stat = "identity") +
-#'    theme_few() +
-#'    scale_fill_manual(values = sanzo.trio("c172"))
+#' # For examples of use with ggplot2, see https://github.com/jmaasch/sanzo.
 #'
-#' # Use as gradient.
-#' ggplot(faithfuld, aes(waiting, eruptions)) +
-#'    geom_raster(aes(fill = density), interpolate = TRUE) +
-#'    theme_few() +
-#'    scale_fill_gradientn(colors = sanzo.trio("c240"))
+#' # For examples of use as a gradient, see https://github.com/jmaasch/sanzo.
 #'
 #' @export
 #'
