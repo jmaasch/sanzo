@@ -1,5 +1,5 @@
 ---
-title: "sanzo_vignette"
+title: "Vignette"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{sanzo_vignette}
@@ -13,6 +13,8 @@ vignette: >
 # Color Palettes Based on the Works of Sanzo Wada
 
 An R package by JRMA Maasch (2019).
+
+This vignette is intended to share code for several different use cases for this package. For more information about this package, see: https://github.com/jmaasch/sanzo
 
 ```{r, include = FALSE}
 
@@ -49,6 +51,16 @@ library(sanzo)
 * ```sanzo.info4()``` : generate dataframe of hexadecimals and urls for all quad palettes
 * ```sanzo.info.all()``` : generate dataframe of hexadecimals and urls for all palettes
 
+# View metadata for all duos, trios, and quads.
+
+```{r info}
+
+knitr::kable(sanzo.info2())
+knitr::kable(sanzo.info3())
+knitr::kable(sanzo.info4())
+
+```
+
 # Use with ggplot2.
 
 ## Scatter plot.
@@ -56,27 +68,29 @@ library(sanzo)
 
 ```{r gg_scatter1, warning = FALSE}
 
-ggplot(iris, aes(Sepal.Length, Sepal.Width, color = as.factor(Species))) + 
-  geom_point(aes(),
+ggplot(raw, aes(CT1, CT2, color = as.factor(Concentration))) + 
+  geom_point(aes(shape = Target),
              size = 2, 
              alpha = 3/4) +
   geom_rug() + 
   theme_tufte(ticks = FALSE) + 
-  scale_color_manual(name = "SPECIES", 
+  scale_color_manual(name = "PLASMID CONCENTRATION", 
                      values = sanzo.trio("c205")) + 
-  scale_shape_manual(name = "", 
+  scale_shape_manual(name = "TARGET", 
                      values = c(17, 18, 19)) + 
   theme(axis.text = element_text(size = 8),
         axis.title = element_text(size = 10),
         plot.title = element_text(size = 10, face = "bold", hjust = 0.5),
         legend.title = element_text(size = 10)) +
-  labs(y = "SEPAL WIDTH\n", 
-        x = "\n SEPAL LENGTH", 
+  labs(y = "REPLICATE 2\n", 
+        x = "\nREPLICATE 1", 
         title = "COMBINATION 205\n") + 
   geom_smooth(method = lm, 
               se = FALSE, 
               color = "darkslategray", 
               size = 0.5) +
+  scale_y_continuous(limits = c(15, 35)) + 
+  scale_x_continuous(limits = c(15, 35)) +
   geom_abline(intercept = 0, 
               slope = 1, 
               linetype = "dotted",
@@ -126,9 +140,9 @@ ggplot(df_scatter, aes(category, x), color = as.factor(category)) +
         plot.title = element_text(size = 10, face = "bold", hjust = 0.5),
         legend.position = "none") +
   labs(y = "", 
-        x = "\nCombination 339", 
+        x = "", 
         fill = "", 
-        title = "") +
+        title = "Combination 339\n") +
   theme(aspect.ratio = 1)
 ```
 
