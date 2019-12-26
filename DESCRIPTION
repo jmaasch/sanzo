@@ -17,3 +17,7 @@ LazyData: true
 URL: https://github.com/jmaasch/sanzo
 BugReports: https://github.com/jmaasch/sanzo/issues
 RoxygenNote: 7.0.2
+Suggests: 
+    datasets,
+    graphics,
+    stats
