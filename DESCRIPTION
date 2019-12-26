@@ -11,10 +11,6 @@ Description: Inspired by the art and color research of Sanzo Wada, his
     by Dain M. Blodorn Kim, this package brings Wada's color combinations
     to R for easy use in data visualizations. This package honors 60 of 
     Wada's color combinations: 20 duos, 20 trios, and 20 quads.
-Imports:
-    datasets,
-    graphics,
-    stats
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
