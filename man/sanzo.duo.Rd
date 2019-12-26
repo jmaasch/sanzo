@@ -9,6 +9,9 @@ sanzo.duo(palette_name)
 \arguments{
 \item{palette_name}{The short ID for the palette, e.g. "c006".}
 }
+\value{
+A vector of hexademicals of length 2.
+}
 \description{
 Generate two-colored palettes.
 }
@@ -22,7 +25,7 @@ c095 <- sanzo.duo("c095")
 custom_quad <- c(c033, c095)
 
 # Use with base R.
-plot(df$x, df$y, col = sanzo.duo("c085"))
+plot(iris$Sepal.Width, iris$Sepal.Length, col = sanzo.duo("c085"))
 
 # Use with ggplot2.
 ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) +

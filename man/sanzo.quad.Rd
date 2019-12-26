@@ -9,6 +9,9 @@ sanzo.quad(palette_name)
 \arguments{
 \item{palette_name}{The short ID for the palette, e.g. "c263".}
 }
+\value{
+A vector of hexademicals of length 3.
+}
 \description{
 Generate four-colored palettes.
 }
@@ -22,7 +25,7 @@ c341 <- sanzo.quad("c341")
 custom_eight <- c(c348, c341)
 
 # Use with base R.
-plot(df$x, df$y, col = sanzo.quad("c341"))
+plot(iris$Sepal.Width, iris$Sepal.Length, col = sanzo.quad("c341"))
 
 # Use with ggplot2.
 ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) +

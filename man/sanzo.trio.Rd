@@ -9,6 +9,9 @@ sanzo.trio(palette_name)
 \arguments{
 \item{palette_name}{The short ID for the palette, e.g. "c121".}
 }
+\value{
+A vector of hexademicals of length 3.
+}
 \description{
 Generate three-colored palettes.
 }
@@ -22,7 +25,7 @@ c226 <- sanzo.trio("c226")
 custom_six <- c(c207, c226)
 
 # Use with base R.
-plot(df$x, df$y, col = sanzo.trio("c343"))
+plot(iris$Sepal.Width, iris$Sepal.Length, col = sanzo.trio("c343"))
 
 # Use with ggplot2.
 ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) +
