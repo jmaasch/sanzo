@@ -15,7 +15,7 @@ An R package by JRMA Maasch (2019).
 
 This vignette is intended to share code for several different use cases for this package. For more information about this package, see: https://github.com/jmaasch/sanzo
 
-```{r, include = FALSE}
+```{r hide, include = FALSE}
 
 # Load packages for ggplot2 demos.
 library(ggplot2)
@@ -38,17 +38,17 @@ library(sanzo)
 ```
 
 ## Functions.
-* ```sanzo.duo()``` : create duo palette
-* ```sanzo.trio()``` : create trio palette
-* ```sanzo.quad()``` : create quad palette
+* ```sanzo.duo(palette_name)``` : return duo palette
+* ```sanzo.trio(palette_name)``` : return trio palette
+* ```sanzo.quad(palette_name)``` : return quad palette
 * ```sanzo.demo2()``` : print demo plots for all duo palettes
 * ```sanzo.demo3()``` : print demo plots for all trio palettes
 * ```sanzo.demo4()``` : print demo plots for all quad palettes
 * ```sanzo.demo.all()``` : print demo plots for all palettes
-* ```sanzo.info2()``` : generate dataframe of hexadecimals and urls for all duo palettes
-* ```sanzo.info3()``` : generate dataframe of hexadecimals and urls for all trio palettes
-* ```sanzo.info4()``` : generate dataframe of hexadecimals and urls for all quad palettes
-* ```sanzo.info.all()``` : generate dataframe of hexadecimals and urls for all palettes
+* ```sanzo.info2()``` : return data frame of hexadecimals and urls for all duo palettes
+* ```sanzo.info3()``` : return data frame of hexadecimals and urls for all trio palettes
+* ```sanzo.info4()``` : return data frame of hexadecimals and urls for all quad palettes
+* ```sanzo.info.all()``` : return data frame of hexadecimals and urls for all palettes
 
 ## View metadata for all duos, trios, and quads.
 
@@ -60,43 +60,16 @@ knitr::kable(sanzo.info4())
 
 ```
 
-## Use with ggplot2.
+## Use with base R.
 
-### Scatter plot.
-```theme_tufte``` (via ```ggthemes``` extension), ```alpha = 3/4```.
+```{r base}
 
-```{r gg_scatter1, warning = FALSE}
-
-ggplot(raw, aes(CT1, CT2, color = as.factor(Concentration))) + 
-  geom_point(aes(shape = Target),
-             size = 2, 
-             alpha = 3/4) +
-  geom_rug() + 
-  theme_tufte(ticks = FALSE) + 
-  scale_color_manual(name = "PLASMID CONCENTRATION", 
-                     values = sanzo.trio("c205")) + 
-  scale_shape_manual(name = "TARGET", 
-                     values = c(17, 18, 19)) + 
-  theme(axis.text = element_text(size = 8),
-        axis.title = element_text(size = 10),
-        plot.title = element_text(size = 10, face = "bold", hjust = 0.5),
-        legend.title = element_text(size = 10)) +
-  labs(y = "REPLICATE 2\n", 
-        x = "\nREPLICATE 1", 
-        title = "COMBINATION 205\n") + 
-  geom_smooth(method = lm, 
-              se = FALSE, 
-              color = "darkslategray", 
-              size = 0.5) +
-  scale_y_continuous(limits = c(15, 35)) + 
-  scale_x_continuous(limits = c(15, 35)) +
-  geom_abline(intercept = 0, 
-              slope = 1, 
-              linetype = "dotted",
-              color = "ivory3") +
-  coord_fixed()
+plot(iris$Sepal.Width, iris$Petal.Width, pch = 18:20, 
+     col = sanzo.trio("c121") [unclass(iris$Species)], ann = FALSE)
 
 ```
+
+## Use with ```ggplot2``` and the ```ggthemes``` extension.
 
 ### Violin plot.
 
