@@ -20,4 +20,7 @@ RoxygenNote: 7.0.2
 Suggests: 
     datasets,
     graphics,
-    stats
+    stats,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
