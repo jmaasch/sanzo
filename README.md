@@ -66,10 +66,10 @@ my_trio <- sanzo.trio("c223")
 my_quad <- sanzo.quad("c252")
 
 # Use palette that has been assigned to a name.
-plot(df$x, df$y, col = my_quad)
+plot(iris$Sepal.Length, iris$Sepal.Width, col = my_quad)
 
 # Use directly.
-plot(df$x, df$y, col = sanzo.duo("c085"))
+plot(iris$Sepal.Length, iris$Sepal.Width, col = sanzo.duo("c085"))
  ```
  
 ### Use with ```ggplot2```.
@@ -77,9 +77,9 @@ plot(df$x, df$y, col = sanzo.duo("c085"))
 Use with ```scale_fill_manual``` or ```scale_color_manual```.
 
 ```R
-ggplot(df, aes(fill = Concentration, y = Cq, x = Target)) + 
-    geom_bar(stat = "identity") +
-    scale_fill_manual(values = sanzo.duo("c103"))
+ggplot(iris, aes(fill = Species, y = Sepal.Width, x = Sepal.Length)) + 
+  geom_bar(stat = "identity") +
+  scale_fill_manual(values = sanzo.trio("c223"))
 ```
 
 ### Use as a continuous color palette.
