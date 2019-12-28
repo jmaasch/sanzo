@@ -59,6 +59,8 @@ To view the output of these functions, see
 
 ### Use with base R.
 
+All examples use data from the ```datasets``` package and should be replicable.
+
  ```R
 # Assign palette to a name if desired.
 my_duo <- sanzo.duo("c229")
@@ -73,6 +75,8 @@ plot(iris$Sepal.Length, iris$Sepal.Width, col = sanzo.duo("c085"))
  ```
  
 ### Use with ```ggplot2```.
+
+All examples use data from the ```datasets``` package and should be replicable.
 
 Use with ```scale_fill_manual``` or ```scale_color_manual```.
 
