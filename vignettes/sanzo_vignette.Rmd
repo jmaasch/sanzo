@@ -13,7 +13,7 @@ vignette: >
 
 An R package by JRMA Maasch (2019).
 
-This vignette is intended to share function documentation and code for several different use cases for this package. Find more information about this package at: https://github.com/jmaasch/sanzo
+This vignette is intended to share function documentation and code for several different use cases for this package. Find more information about this package at https://github.com/jmaasch/sanzo.
 
 ```{r hide, include = FALSE}
 
