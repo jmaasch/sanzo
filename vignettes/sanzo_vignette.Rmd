@@ -66,6 +66,8 @@ Precede any function by a question mark to access description, arguments, return
 
 ## View metadata for all duos, trios, and quads.
 
+The following functions return a data frame containing long-form names, short-form IDs, hexadecimal values, and links to Dain M. Blodorn Kim's https://sanzo-wada.dmbk.io for further palette information.
+
 ```{r info}
 
 knitr::kable(sanzo.info2())
@@ -73,6 +75,11 @@ knitr::kable(sanzo.info3())
 knitr::kable(sanzo.info4())
 
 ```
+
+
+## View palette demos.
+
+To illustrate their potential, each color combination can be demo'd via base R scatter and bar plots. The output of ```sanzo.demo2()```, ```sanzo.demo3()```, ```sanzo.demo4()```, and ```sanzo.demo.all()``` can be previewed at https://github.com/jmaasch/sanzo.
 
 ## Use with base R.
 
@@ -129,9 +136,7 @@ ggplot(df_scatter, aes(category, x), color = as.factor(category)) +
   geom_violin(aes(fill = factor(category)), trim = FALSE) + 
   theme_hc() + 
   scale_fill_manual(name = "", 
-                     values = sanzo.quad("c339")) + 
-  scale_color_manual(name = "", 
-                     values = sanzo.quad("c339")) + 
+                     values = sanzo.quad("c279")) + 
   theme(axis.text = element_text(size = 8),
         axis.title = element_text(size = 10),
         plot.title = element_text(size = 10, face = "bold", hjust = 0.5),
@@ -139,26 +144,26 @@ ggplot(df_scatter, aes(category, x), color = as.factor(category)) +
   labs(y = "", 
         x = "", 
         fill = "", 
-        title = "Combination 339\n") +
+        title = "Combination 279\n") +
   theme(aspect.ratio = 1)
 ```
 
 ### Use as gradient.
 
-Continuous colors via ```scale_fill_gradientn```, ```theme_few``` (via ```ggthemes``` extension).
+By default, ```sanzo``` palettes are discrete. There are multiple ways to achieve a gradient. For example, using ```scale_fill_gradientn``` or ```scale_color_gradientn``` in ```ggplot2``` allows you to use any ```sanzo``` palette as a continuous gradient.
 
-This example uses data from the ```datasets``` package and should be replicable.
+This example uses data from the ```datasets``` package and should be replicable. Continuous colors via ```scale_fill_gradientn``` and plot theme via ```theme_few``` from the ```ggthemes``` extension.
 
 ```{r gradient, warning = FALSE}
 
 ggplot(faithfuld, aes(waiting, eruptions)) +
   geom_raster(aes(fill = density), interpolate = TRUE) +
   theme_few() +
-  scale_fill_gradientn(colors = sanzo.duo("c114")) +
+  scale_fill_gradientn(colors = sanzo.trio("c226")) +
   labs(y = "", 
         x = "", 
         fill = "", 
-        title = "Combination 114\n")
+        title = "Combination 226\n")
 
 ```
 
@@ -169,7 +174,7 @@ ggplot(faithfuld, aes(waiting, eruptions)) +
 ggplot(mean, aes(fill = Concentration, y = CT, x = Target)) + 
   geom_bar(stat = "identity") +
   theme_few() +
-  scale_fill_manual(values = sanzo.quad("c268"), labels = c("A", "B", "C")) + 
+  scale_fill_manual(values = sanzo.trio("c239"), labels = c("A", "B", "C")) + 
   theme(axis.text = element_text(size = 8),
         axis.title = element_text(size = 10),
         plot.title = element_text(size = 10, face = "bold", hjust = 0.5),
@@ -180,6 +185,6 @@ ggplot(mean, aes(fill = Concentration, y = CT, x = Target)) +
   labs(y = "", 
         x = "", 
         fill = "", 
-        title = "Combination 268")
+        title = "Combination 239")
 
 ```
