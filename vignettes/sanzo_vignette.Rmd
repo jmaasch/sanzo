@@ -17,26 +17,25 @@ This vignette is intended to share function documentation and code for several d
 
 ```{r hide, include = FALSE}
 
-# Load packages for ggplot2 demos.
-library(ggplot2)
-library(ggthemes)
-
-data("iris")
-
 # Read in data for ggplot2 demos.
 raw <- read.csv("/Users/razel/Desktop/PROGS/R_practice/2019/sth_plasmid_ct_mean_raw.csv")
 mean <- read.csv("/Users/razel/Desktop/PROGS/R_practice/2019/sth_plasmid_ct_mean.csv")
 
 ```
 
-## Installation.
+## Load packages
 
-```{r setup}
+```{r setup, warning = FALSE, error = FALSE}
 # Install package if needed.
 # devtools::install_github("jmaasch/sanzo")
 
-# Load.
+# Load sanzo.
 library(sanzo)
+
+# Load packages for ggplot2 demos.
+library(ggplot2)
+library(ggthemes)
+
 ```
 
 ## Functions.
