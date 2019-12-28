@@ -66,6 +66,16 @@ Precede any function by a question mark to access description, arguments, return
 
 ## View metadata for all duos, trios, and quads.
 
+To quickly access palette names:
+
+```{r names}
+
+names(duos)
+names(trios)
+names(quads)
+
+```
+
 The following functions return a data frame containing long-form names, short-form IDs, hexadecimal values, and links to Dain M. Blodorn Kim's https://sanzo-wada.dmbk.io for further palette information.
 
 ```{r info}
