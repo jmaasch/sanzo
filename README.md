@@ -21,6 +21,7 @@ Inspired by the art and color research of Sanzo Wada, his <a href="http://seigen
 
 <img src="https://github.com/jmaasch/sanzo/blob/master/dev/sanzo_dictionary/sanzo2.jpg" width="850" align="middle"/>
 
+This package is licensed under the GNU General Public License v3 (<a href="https://choosealicense.com/licenses/gpl-3.0/" style="color: rgb(0,0,0)"><font color="000000">GPL-3</font></a>).
 
 &#8593; [return to top](#sanzo)
 
