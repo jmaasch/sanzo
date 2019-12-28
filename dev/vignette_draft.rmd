@@ -1,0 +1,199 @@
+---
+title: "Vignette"
+author: "Jacqueline R.M.A. Maasch"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{sanzo_vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+
+# ```sanzo```: Color Palettes Based on the Works of Sanzo Wada
+
+An R package by JRMA Maasch (2019).
+
+This vignette is intended to share function documentation and code for several different use cases for this package. Find more information about this package at https://github.com/jmaasch/sanzo.
+
+```{r hide, include = FALSE}
+
+# Read in data for ggplot2 demos.
+raw <- read.csv("/Users/razel/Desktop/PROGS/R_practice/2019/sth_plasmid_ct_mean_raw.csv")
+mean <- read.csv("/Users/razel/Desktop/PROGS/R_practice/2019/sth_plasmid_ct_mean.csv")
+
+```
+
+## Load packages
+
+```{r setup, warning = FALSE, error = FALSE}
+# Install package if needed.
+# devtools::install_github("jmaasch/sanzo")
+
+# Load sanzo.
+library(sanzo)
+
+# Load packages for ggplot2 demos.
+library(ggplot2)
+library(ggthemes)
+
+```
+
+## Functions.
+* ```sanzo.duo(palette_name)``` : return duo palette
+* ```sanzo.trio(palette_name)``` : return trio palette
+* ```sanzo.quad(palette_name)``` : return quad palette
+* ```sanzo.demo2()``` : print demo plots for all duo palettes
+* ```sanzo.demo3()``` : print demo plots for all trio palettes
+* ```sanzo.demo4()``` : print demo plots for all quad palettes
+* ```sanzo.demo.all()``` : print demo plots for all palettes
+* ```sanzo.info2()``` : return data frame of hexadecimals and urls for all duo palettes
+* ```sanzo.info3()``` : return data frame of hexadecimals and urls for all trio palettes
+* ```sanzo.info4()``` : return data frame of hexadecimals and urls for all quad palettes
+* ```sanzo.info.all()``` : return data frame of hexadecimals and urls for all palettes
+
+## View function documentation.
+
+Precede any function by a question mark to access description, arguments, return value, and usage suggestions.
+
+```{r doc}
+
+# Examples:
+?sanzo.info2()
+?sanzo.trio()
+
+```
+
+## View metadata for all duos, trios, and quads.
+
+To quickly access palette names:
+
+```{r names}
+
+names(duos)
+names(trios)
+names(quads)
+
+```
+
+The following functions return a data frame containing long-form names, short-form IDs, hexadecimal values, and links to Dain M. Blodorn Kim's https://sanzo-wada.dmbk.io for further palette information.
+
+```{r info}
+
+knitr::kable(sanzo.info2())
+knitr::kable(sanzo.info3())
+knitr::kable(sanzo.info4())
+
+```
+
+
+## View palette demos.
+
+To illustrate their potential, each color combination can be demo'd via base R scatter and bar plots. The output of ```sanzo.demo2()```, ```sanzo.demo3()```, ```sanzo.demo4()```, and ```sanzo.demo.all()``` can be previewed at https://github.com/jmaasch/sanzo.
+
+## Use with base R.
+
+These examples use data from the ```datasets``` package and should be replicable.
+
+### Scatter plot.
+
+```{r base}
+
+plot(iris$Sepal.Width, iris$Petal.Width, pch = 18:20, main = "Combination 121",
+     ylab = "", xlab = "", col = sanzo.trio("c121") [unclass(iris$Species)])
+
+```
+
+### Bar plot.
+
+```{r base2}
+barplot(BOD$demand, col = sanzo.trio("c139"), main = "Combination 139", 
+        ylim = c(0, 20), border = NA)
+```
+
+## Use with ```ggplot2``` and the ```ggthemes``` extension.
+
+### Violin plot.
+
+```{r violin_data, echo = FALSE}
+  x1 <- rnorm(40, mean = 80.2, sd = 4)
+  x2 <- rnorm(20, mean = 75.3, sd = 5)
+  x3 <- rnorm(30, mean = 63.3, sd = 4)
+  x4 <- rnorm(20, mean = 55.8, sd = 3)
+  
+  y1 <- rnorm(40, mean = 55.8, sd = 3)
+  y2 <- rnorm(20, mean = 63.3, sd = 4)
+  y3 <- rnorm(30, mean = 55.8, sd = 5)
+  y4 <- rnorm(20, mean = 80.2, sd = 4)
+  
+  x <- c(x1, x2, x3, x4)
+  y <- c(y1, y2, y3, y4)
+  
+  category <- c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+                1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 
+                3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
+                3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
+                4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4)
+  
+  df_scatter <- data.frame(x, y, category)
+
+```
+
+```{r violin, warning = FALSE}
+
+ggplot(df_scatter, aes(category, x), color = as.factor(category)) + 
+  geom_violin(aes(fill = factor(category)), trim = FALSE) + 
+  theme_hc() + 
+  scale_fill_manual(name = "", 
+                     values = sanzo.quad("c279")) + 
+  theme(axis.text = element_text(size = 8),
+        axis.title = element_text(size = 10),
+        plot.title = element_text(size = 10, face = "bold", hjust = 0.5),
+        legend.position = "none") +
+  labs(y = "", 
+        x = "", 
+        fill = "", 
+        title = "Combination 279\n") +
+  theme(aspect.ratio = 1)
+```
+
+### Use as gradient.
+
+By default, ```sanzo``` palettes are discrete. There are multiple ways to achieve a gradient. For example, using ```scale_fill_gradientn``` or ```scale_color_gradientn``` in ```ggplot2``` allows you to use any ```sanzo``` palette as a continuous gradient.
+
+This example uses data from the ```datasets``` package and should be replicable. Continuous colors via ```scale_fill_gradientn``` and plot theme via ```theme_few``` from the ```ggthemes``` extension.
+
+```{r gradient, warning = FALSE}
+
+ggplot(faithfuld, aes(waiting, eruptions)) +
+  geom_raster(aes(fill = density), interpolate = TRUE) +
+  theme_few() +
+  scale_fill_gradientn(colors = sanzo.trio("c226")) +
+  labs(y = "", 
+        x = "", 
+        fill = "", 
+        title = "Combination 226\n")
+
+```
+
+### Bar plot.
+
+```{r stacked_bar, warning = FALSE}
+
+ggplot(mean, aes(fill = Concentration, y = CT, x = Target)) + 
+  geom_bar(stat = "identity") +
+  theme_few() +
+  scale_fill_manual(values = sanzo.trio("c239"), labels = c("A", "B", "C")) + 
+  theme(axis.text = element_text(size = 8),
+        axis.title = element_text(size = 10),
+        plot.title = element_text(size = 10, face = "bold", hjust = 0.5),
+        legend.title = element_text(size = 10),
+        legend.position = "bottom",
+        legend.direction = "horizontal") +
+  scale_x_discrete(labels = c("1", "2", "3")) +
+  labs(y = "", 
+        x = "", 
+        fill = "", 
+        title = "Combination 239")
+
+```
