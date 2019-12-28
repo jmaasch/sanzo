@@ -13,7 +13,7 @@ vignette: >
 
 An R package by JRMA Maasch (2019).
 
-This vignette is intended to share code for several different use cases for this package. For more information about this package, see: https://github.com/jmaasch/sanzo
+This vignette is intended to share function documentation and code for several different use cases for this package. Find more information about this package at: https://github.com/jmaasch/sanzo
 
 ```{r hide, include = FALSE}
 
@@ -28,6 +28,8 @@ raw <- read.csv("/Users/razel/Desktop/PROGS/R_practice/2019/sth_plasmid_ct_mean_
 mean <- read.csv("/Users/razel/Desktop/PROGS/R_practice/2019/sth_plasmid_ct_mean.csv")
 
 ```
+
+## Installation.
 
 ```{r setup}
 # Install package if needed.
@@ -50,6 +52,18 @@ library(sanzo)
 * ```sanzo.info4()``` : return data frame of hexadecimals and urls for all quad palettes
 * ```sanzo.info.all()``` : return data frame of hexadecimals and urls for all palettes
 
+## View function documentation.
+
+Precede any function by a question mark to access description, arguments, return value, and usage suggestions.
+
+```{r doc}
+
+# Examples:
+?sanzo.info2()
+?sanzo.trio()
+
+```
+
 ## View metadata for all duos, trios, and quads.
 
 ```{r info}
@@ -62,11 +76,22 @@ knitr::kable(sanzo.info4())
 
 ## Use with base R.
 
+These examples use data from the ```datasets``` package and should be replicable.
+
+### Scatter plot.
+
 ```{r base}
 
-plot(iris$Sepal.Width, iris$Petal.Width, pch = 18:20, 
-     col = sanzo.trio("c121") [unclass(iris$Species)], ann = FALSE)
+plot(iris$Sepal.Width, iris$Petal.Width, pch = 18:20, main = "Combination 121",
+     ylab = "", xlab = "", col = sanzo.trio("c121") [unclass(iris$Species)])
 
+```
+
+### Bar plot.
+
+```{r base2}
+barplot(BOD$demand, col = sanzo.trio("c139"), main = "Combination 139", 
+        ylim = c(0, 20), border = NA)
 ```
 
 ## Use with ```ggplot2``` and the ```ggthemes``` extension.
@@ -119,7 +144,10 @@ ggplot(df_scatter, aes(category, x), color = as.factor(category)) +
 ```
 
 ### Use as gradient.
+
 Continuous colors via ```scale_fill_gradientn```, ```theme_few``` (via ```ggthemes``` extension).
+
+This example uses data from the ```datasets``` package and should be replicable.
 
 ```{r gradient, warning = FALSE}
 
@@ -146,8 +174,8 @@ ggplot(mean, aes(fill = Concentration, y = CT, x = Target)) +
         axis.title = element_text(size = 10),
         plot.title = element_text(size = 10, face = "bold", hjust = 0.5),
         legend.title = element_text(size = 10),
-        legend.position = "right",
-        legend.direction = "vertical") +
+        legend.position = "bottom",
+        legend.direction = "horizontal") +
   scale_x_discrete(labels = c("1", "2", "3")) +
   labs(y = "", 
         x = "", 
