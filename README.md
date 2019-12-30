@@ -87,15 +87,13 @@ ggplot(iris, aes(fill = Species, y = Sepal.Width, x = Sepal.Length)) +
 
 ### Use as a continuous color palette.
 
-By default, ```sanzo``` palettes are discrete. There are multiple ways to achieve a gradient. For example, using ```scale_fill_gradientn``` or ```scale_color_gradientn``` in ```ggplot2``` allows you to use any ```sanzo``` palette as a continuous gradient.
+By default, ```sanzo``` palettes are discrete. There are multiple ways to achieve a gradient. For example, using ```scale_fill_gradientn``` or ```scale_color_gradientn``` in ```ggplot2``` allows you to use any ```sanzo``` palette as a continuous gradient. See example visualizations [here.](#gradient)
 
 ```R
 ggplot(faithfuld, aes(waiting, eruptions)) +
     geom_raster(aes(fill = density), interpolate = TRUE) +
     scale_fill_gradientn(colors = sanzo.duo("c102")) 
 ```
-
-See example visualizations [here.](#gradient)
 
 ### Access palette metadata with ```sanzo.info``` functions.
 
