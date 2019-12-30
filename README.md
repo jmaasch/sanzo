@@ -157,7 +157,7 @@ Many of the plots in this gallery additionally use the ```ggthemes``` and ```cow
 
 |   |   |
 |:-------------------------:|:-------------------------:|
-|![bar1](https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/bar.png)|![bar2](https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/stacked_bar.png)|
+|![bar1](https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/bar_ggplot2.png)|![bar2](https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/bar_stacked_ggplot2.png)|
 
 ### Gradient.
 
