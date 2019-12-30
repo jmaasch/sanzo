@@ -138,7 +138,7 @@ For a more muted color palette, select an alpha less than 1. In the plot at righ
 
 ## ```ggplot2``` gallery
 
-Many of the plots in this gallery additionally use ```ggthemes``` and ```cowplot```.
+Many of the plots in this gallery additionally use the ```ggthemes``` and ```cowplot``` packages.
 
 ### Scatter plots.
 
