@@ -19,7 +19,7 @@ Inspired by the art and color research of Sanzo Wada, his <a href="http://seigen
 
 > Sanzo Wada (1883-1967) was an artist, teacher, costume and kimono designer during a turbulent time in avant-garde Japanese art and cinema. Wada was ahead of his time in developing traditional and Western influenced color combinations, helping to lay the foundations for contemporary color research. Based on his original 6-volume work from the 1930s, this book offers 348 color combinations with CMYK and Pantone numbers, as attractive and sensuous as the book’s own design. – *A Dictionary Of Color Combinations*
 
-<img src="https://github.com/jmaasch/sanzo/blob/master/dev/sanzo_dictionary/sanzo2.jpg" width="850" align="middle"/>
+<img src="https://github.com/jmaasch/sanzo/blob/master/dev/sanzo_dictionary/sanzo2.jpg" width="700" align="middle"/>
 
 This package is licensed under the GNU General Public License v3.0 (<a href="https://choosealicense.com/licenses/gpl-3.0/" target="_blank">GPL-3</a>).
 
@@ -39,7 +39,7 @@ library(sanzo)
 
 ### View palette demos using ```sanzo.demo``` functions.
 
-To illustrate their potential, each color combination can be demo'd via base R scatter and bar plots.
+Each color combination can be demo'd via base R scatter and bar plots.
 
 ```R
 # Print demo plots for duos.
@@ -77,9 +77,7 @@ plot(iris$Sepal.Length, iris$Sepal.Width, col = sanzo.duo("c085"))
  
 ### Use with ```ggplot2```.
 
-All examples use data from the ```datasets``` package and should be replicable.
-
-Use with ```scale_fill_manual``` or ```scale_color_manual```.
+Use with ```scale_fill_manual``` or ```scale_color_manual```. All examples use data from the ```datasets``` package and should be replicable.
 
 ```R
 ggplot(iris, aes(fill = Species, y = Sepal.Width, x = Sepal.Length)) + 
@@ -117,7 +115,7 @@ print(sanzo.info.all())
 knitr::kable(sanzo.info.all())
 ```
 
-To quickly access palette names only:
+Duo, trio, and quad data are stored in exported lists. To quickly access palette names only:
 
 ```R
 names(duos)
@@ -143,6 +141,8 @@ For a more muted color palette, select an alpha less than 1. In the plot at righ
 &#8593; [return to top](#sanzo)
 
 ## ```ggplot2``` gallery
+
+Many of the plots in this gallery additionally use ```ggthemes``` and ```cowplot```.
 
 ### Scatter plots.
 
