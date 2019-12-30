@@ -39,7 +39,8 @@ library(sanzo)
 
 ### View palette demos using ```sanzo.demo``` functions.
 
-Each color combination can be demo'd via base R scatter and bar plots.
+Each color combination can be demo'd via base R scatter and bar plots. To view the output of these functions, see 
+**[Full suite](#full-suite):** [Duo palettes.](#duo-palettes) | [Trio palettes.](#trio-palettes) | [Quad palettes.](#quad-palettes)
 
 ```R
 # Print demo plots for duos.
@@ -54,9 +55,6 @@ sanzo.demo4()
 # Print demo plots for all palettes.
 sanzo.demo.all()
 ```
-
-To view the output of these functions, see 
-**[Full suite](#full-suite):** [Duo palettes.](#duo-palettes) | [Trio palettes.](#trio-palettes) | [Quad palettes.](#quad-palettes)
 
 ### Use with base R.
 
