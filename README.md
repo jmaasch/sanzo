@@ -106,9 +106,9 @@ quad_info_df <- sanzo.info4()
 
 info_df <- sanzo.info.all()
 
-# Print data frame.
-print(sanzo.info.all())
-knitr::kable(sanzo.info.all())
+# Two ways to print a data frame.
+print(sanzo.info2())
+knitr::kable(sanzo.info2())
 ```
 
 Duo, trio, and quad data are stored in exported lists. To quickly access palette names only:
