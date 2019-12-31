@@ -95,7 +95,7 @@ plot(iris$Sepal.Width, iris$Petal.Width, pch = 18:20, main = "Combination 121",
 ### Bar plot.
 
 ```{r base2}
-barplot(BOD$demand, col = sanzo.trio("c139"), main = "Combination 139", 
+barplot(BOD$demand, col = sanzo.trio("c239"), main = "Combination 239", 
         ylim = c(0, 20), border = NA)
 ```
 
