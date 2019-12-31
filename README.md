@@ -89,8 +89,8 @@ By default, ```sanzo``` palettes are discrete. There are multiple ways to achiev
 
 ```R
 ggplot(faithfuld, aes(waiting, eruptions)) +
-    geom_raster(aes(fill = density), interpolate = TRUE) +
-    scale_fill_gradientn(colors = sanzo.duo("c102")) 
+   geom_raster(aes(fill = density), interpolate = TRUE) +
+   scale_fill_gradientn(colors = sanzo.duo("c102")) 
 ```
 
 ### Access palette metadata with ```sanzo.info``` functions.
