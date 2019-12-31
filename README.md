@@ -30,10 +30,10 @@ This package is licensed under the GNU General Public License v3.0 (<a href="htt
 ### Installation.
 
 ```R
-# Install package.
+# Install package. The package devtools must be installed but need not be loaded.
 devtools::install_github("jmaasch/sanzo")
 
-# Load.
+# Load package.
 library(sanzo)
 ```
 
