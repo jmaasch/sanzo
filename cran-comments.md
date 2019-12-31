@@ -12,10 +12,15 @@ Windows for R 3.6.2:
 * There was 1 NOTE: 
 
 > Possibly mis-spelled words in DESCRIPTION:
+
   Blodorn (11:16)
+  
   Dain (11:8)
+  
   Sanzo (2:45, 9:56)
+  
   Wada (2:51, 9:62)
+  
   Wada's (11:49, 13:5)
   
 These words are each names and none are misspelled.
