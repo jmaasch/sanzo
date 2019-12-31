@@ -19,7 +19,7 @@ This vignette is intended to share function documentation and code for several d
 
 ```{r setup, warning = FALSE, error = FALSE}
 
-# Install package if needed.
+# Install development version of package if needed.
 # devtools::install_github("jmaasch/sanzo")
 
 # Load sanzo.
