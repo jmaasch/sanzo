@@ -39,7 +39,7 @@ library(sanzo)
 
 ### View documentation.
 
-View this <a href="https://github.com/jmaasch/sanzo/tree/master/vignettes" target="_blank">vignette</a> for additional package documentation, or precede any function by a question mark to access description, arguments, return value, and usage suggestions.
+View this <a href="http://rpubs.com/razel/sanzo-vignette" target="_blank">vignette</a> for additional package documentation, or precede any function by a question mark to access description, arguments, return value, and usage suggestions.
 
 ```R
 # Access function documentation.
