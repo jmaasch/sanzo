@@ -1,4 +1,5 @@
 ## Test environments for R CMD check.
+Mac and Windows via:
 * local macOS X install, R version 3.5.3 (2019-03-11)
 * win-builder (devel and release)
 
