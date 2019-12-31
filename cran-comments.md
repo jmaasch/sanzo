@@ -7,4 +7,4 @@ Mac and Windows via:
 There were no ERRORs, WARNINGs, or NOTEs.
 
 ## Beta testing.
-This package was beta tested by colleagues running macOS X and Ubuntu. No problems were encountered.
+This package was beta tested by colleagues running macOS X and Ubuntu 18.04.3 LTS. No problems were encountered.
