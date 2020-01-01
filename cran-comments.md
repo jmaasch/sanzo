@@ -24,4 +24,4 @@ Windows for R 3.6.2:
 These words are each names and none are misspelled.
 
 ## Beta testing.
-This package was beta tested by colleagues running **macOS 10.15.1** (R 3.6.1) and **Ubuntu 18.04.3 LTS** (R 3.6.2). No problems were encountered.
+This package was beta tested by colleagues running **macOS 10.15.1** (R 3.6.1) and **Ubuntu 18.04.3 LTS** (R 3.4.4). No problems were encountered.
