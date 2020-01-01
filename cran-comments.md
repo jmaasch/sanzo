@@ -1,6 +1,8 @@
 ## Test environments for R CMD check.
 Mac and Windows via:
-* local macOS X install, R version 3.5.3 (2019-03-11), R version 3.6.2 (2019-12-12), and R-devel 4.0.0 (2019-12-29)
+* local macOS X install, R version 3.5.3 (2019-03-11)
+* local macOS X install, R version 3.6.2 (2019-12-12)
+* local macOS X install, R-devel 4.0.0 (2019-12-29)
 * win-builder (release, R version 3.6.2)
 
 ## R CMD check results.
