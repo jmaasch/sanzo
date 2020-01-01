@@ -6,13 +6,7 @@ Mac and Windows via:
 * win-builder (release, R version 3.6.2)
 
 ## R CMD check results.
-R 3.5.3 for macOS:
-* There were no ERRORs, WARNINGs, or NOTEs.
-
-R 3.6.2 for macOS:
-* There were no ERRORs, WARNINGs, or NOTEs.
-
-R-devel for macOS:
+R 3.5.3, R 3.6.2, and R-devel for macOS:
 * There were no ERRORs, WARNINGs, or NOTEs.
 
 R 3.6.2 for Windows:
