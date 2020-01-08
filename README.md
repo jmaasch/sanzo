@@ -67,7 +67,7 @@ sanzo.demo4()
 sanzo.demo.all()
 ```
 
-*Optional*: for easier viewing, try gridding up prior to running ```sanzo.demo``` functions. **NOTE:** this will alter ```par``` settings.
+*Optional*: for easier viewing, try gridding up prior to running ```sanzo.demo``` functions. **NOTE:** This will alter ```par``` settings.
 
 ```R
 
