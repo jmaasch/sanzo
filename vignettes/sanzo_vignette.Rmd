@@ -83,13 +83,25 @@ knitr::kable(sanzo.info4())
 
 To illustrate their potential, each color combination can be demo'd via base R scatter and bar plots. 
 
-For easier viewing, try gridding up (**note** -- this will alter par settings):
+For easier viewing, try gridding up (**NOTE** -- this will alter ```par``` settings):
 
 ```{r grid, eval = FALSE}
 
 # Set up gridded layout, if desired:
 graphics::layout(matrix(1:4, nrow = 2))
 graphics::par(mar = c(2, 2, 2, 2))
+
+# Print demo plots for duos.
+sanzo.demo2()
+
+# Print demo plots for trios.
+sanzo.demo3()
+
+# Print demo plots for quads.
+sanzo.demo4()
+
+# Print demo plots for all palettes.
+sanzo.demo.all()
 
 ```
 
