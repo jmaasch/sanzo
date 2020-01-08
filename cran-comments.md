@@ -25,6 +25,7 @@ function is exited. e.g.:
 e.g.: ```sanzo.demo2()```
 
 - [x] **Feedback incorporated**: ```par``` and ```layout``` calls removed from demo functions.
+- [x] **R CMD check**: re-ran check on R 3.6.2 for macOS, unaffected (see results below).
 
 ## Test environments for R CMD check.
 Mac and Windows via:
