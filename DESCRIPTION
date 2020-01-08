@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "jacqueline.maasch@gmail.com")
 Description: Inspired by the art and color research of Sanzo Wada (1883-1967), 
-    his Dictionary Of Color Combinations (2011, ISBN:978-4861522475), and the 
+    his "Dictionary Of Color Combinations" (2011, ISBN:978-4861522475), and the 
     interactive site by Dain M. Blodorn Kim <https://github.com/dblodorn/sanzo-wada>, 
     this package brings Wada's color combinations to R for easy use in data 
     visualizations. This package honors 60 of Wada's color combinations: 
