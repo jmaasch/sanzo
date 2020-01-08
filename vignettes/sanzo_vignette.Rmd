@@ -13,16 +13,20 @@ vignette: >
 
 An R package by JRMA Maasch (2019).
 
-This vignette is intended to share function documentation and code for several different use cases for this package. Find further information and suggested uses at https://github.com/jmaasch/sanzo.
+This vignette is intended to share function documentation and code for several different use cases Find further information and suggested uses at https://github.com/jmaasch/sanzo.
 
 ## Load package
 
-```{r setup, warning = FALSE, error = FALSE}
+```{r install, warning = FALSE, error = FALSE, eval = FALSE}
 
-# Install development version of package if needed.
-# devtools::install_github("jmaasch/sanzo")
+# Install development version of package, if needed.
+devtools::install_github("jmaasch/sanzo")
 
-# Load sanzo.
+```
+
+```{r load, warning = FALSE, error = FALSE}
+
+# Load package.
 library(sanzo)
 
 ```
@@ -77,7 +81,23 @@ knitr::kable(sanzo.info4())
 
 ## View palette demos.
 
-To illustrate their potential, each color combination can be demo'd via base R scatter and bar plots. The output of ```sanzo.demo2()```, ```sanzo.demo3()```, ```sanzo.demo4()```, and ```sanzo.demo.all()``` can be previewed at https://github.com/jmaasch/sanzo.
+To illustrate their potential, each color combination can be demo'd via base R scatter and bar plots. 
+
+For easier viewing, try gridding up (**note** -- this will alter par settings):
+
+```{r grid, eval = FALSE}
+
+# Set up gridded layout, if desired:
+graphics::layout(matrix(1:4, nrow = 2))
+graphics::par(mar = c(2, 2, 2, 2))
+
+```
+
+The output of ```sanzo.demo2()```, ```sanzo.demo3()```, ```sanzo.demo4()```, and ```sanzo.demo.all()``` can be previewed at https://github.com/jmaasch/sanzo.
+
+## Use with ```ggplot2```.
+
+View examples of use with ```ggplot2``` at https://github.com/jmaasch/sanzo.
 
 ## Use with base R.
 
@@ -87,18 +107,17 @@ These examples use data from the ```datasets``` package and should be replicable
 
 ```{r base}
 
-plot(iris$Sepal.Width, iris$Petal.Width, pch = 18:20, main = "Combination 121",
-     ylab = "", xlab = "", col = sanzo.trio("c121") [unclass(iris$Species)])
+graphics::plot(iris$Sepal.Width, iris$Petal.Width, pch = 18:20,
+               main = "Combination 121", ylab = "", xlab = "", 
+               col = sanzo.trio("c121") [unclass(iris$Species)])
 
 ```
 
 ### Bar plot.
 
 ```{r base2}
-barplot(BOD$demand, col = sanzo.trio("c239"), main = "Combination 239", 
-        ylim = c(0, 20), border = NA)
+
+graphics::barplot(BOD$demand, col = sanzo.trio("c239"), 
+                  main = "Combination 239", ylim = c(0, 20), border = NA)
+
 ```
-
-## Use with ```ggplot2```.
-
-View examples of use with ```ggplot2``` at https://github.com/jmaasch/sanzo.
