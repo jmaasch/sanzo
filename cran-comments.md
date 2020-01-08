@@ -12,14 +12,14 @@ with no space after 'doi:', 'arXiv:', 'https:' and angle brackets for
 auto-linking.
 (If you want to add a title as well please put it in quotes: "Title")
 
-[X] Feedback incorporated.
+[x] Feedback incorporated.
 
 > Please make sure that you do not change the user's options, par or 
 working directory. If you really have to do so, please ensure with an 
 *immediate* call of on.exit() that the settings are reset when the 
 function is exited.
 
-[X] Feedback incorporated.
+[x] Feedback incorporated.
 
 ## Test environments for R CMD check.
 Mac and Windows via:
