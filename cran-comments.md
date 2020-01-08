@@ -1,6 +1,6 @@
 ## Resubmission.
 
-Original submission 7 January 2020. Feedback provided and incorporated 8 January 2020.
+Original submission 7 January 2020. CRAN feedback provided and incorporated 8 January 2020.
 
 > Please add the references you are mentioning to the description field of 
 your DESCRIPTION file in the form
