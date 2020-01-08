@@ -1,3 +1,26 @@
+## Resubmission.
+
+Original submission 7 January 2020. Feedback provided and incorporated 8 January 2020.
+
+> Please add the references you are mentioning to the description field of 
+your DESCRIPTION file in the form
+authors (year) <doi:...>
+authors (year) <arXiv:...>
+authors (year, ISBN:...)
+or if those are not available: <https:...>
+with no space after 'doi:', 'arXiv:', 'https:' and angle brackets for 
+auto-linking.
+(If you want to add a title as well please put it in quotes: "Title")
+
+[X] Feedback incorporated.
+
+> Please make sure that you do not change the user's options, par or 
+working directory. If you really have to do so, please ensure with an 
+*immediate* call of on.exit() that the settings are reset when the 
+function is exited.
+
+[X] Feedback incorporated.
+
 ## Test environments for R CMD check.
 Mac and Windows via:
 * local macOS X install, R version 3.5.3 (2019-03-11)
