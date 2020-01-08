@@ -17,7 +17,12 @@ auto-linking.
 > Please make sure that you do not change the user's options, par or 
 working directory. If you really have to do so, please ensure with an 
 *immediate* call of on.exit() that the settings are reset when the 
-function is exited.
+function is exited. e.g.:
+...
+oldpar <- par(mfrow=c(2,2))             # code line i
+on.exit(par(oldpar))                    # code line i + 1
+...
+e.g.:sanzo.demo2()
 
 - [x] Feedback incorporated.
 
