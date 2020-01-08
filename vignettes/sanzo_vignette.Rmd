@@ -1,5 +1,5 @@
 ---
-title: "Vignette"
+title: "VIGNETTE"
 author: "Jacqueline R.M.A. Maasch"
 output: rmarkdown::html_vignette
 vignette: >
@@ -9,11 +9,11 @@ vignette: >
 ---
 
 
-# ```sanzo```: Color Palettes Based on the Works of Sanzo Wada
+# ```sanzo``` | *Color Palettes Based on the Works of Sanzo Wada*
 
 An R package by JRMA Maasch (2019).
 
-This vignette is intended to share function documentation and code for several different use cases Find further information and suggested uses at https://github.com/jmaasch/sanzo.
+This vignette is intended to share function documentation and code for several different use cases. Find further information and suggested uses at https://github.com/jmaasch/sanzo.
 
 ## Load package
 
