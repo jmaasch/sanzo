@@ -19,10 +19,10 @@ working directory. If you really have to do so, please ensure with an
 *immediate* call of on.exit() that the settings are reset when the 
 function is exited. e.g.:
 ...
-oldpar <- par(mfrow=c(2,2))             # code line i
-on.exit(par(oldpar))                    # code line i + 1
+```oldpar <- par(mfrow=c(2,2))```            # code line i
+```on.exit(par(oldpar))```                   # code line i + 1
 ...
-e.g.:sanzo.demo2()
+e.g.: ```sanzo.demo2()```
 
 - [x] Feedback incorporated.
 
