@@ -25,11 +25,6 @@ sanzo.demo2 <- function() {
          call. = FALSE)
   }
 
-  # Set up layout.
-
-  graphics::layout(matrix(1:4, nrow = 2))
-  graphics::par(mar = c(2, 2, 2, 2))
-
   # Print demo plots.
 
   graphics::barplot(datasets::BOD$demand, col = sanzo.duo("c006"), main = "Combination 006",
@@ -201,11 +196,6 @@ sanzo.demo3 <- function() {
          call. = FALSE)
   }
 
-  # Set up layout.
-
-  graphics::layout(matrix(1:4, nrow = 2))
-  graphics::par(mar = c(2, 2, 2, 2))
-
   # Print demo plots.
 
   graphics::barplot(datasets::BOD$demand, col = sanzo.trio("c121"), main = "Combination 121",
@@ -356,6 +346,7 @@ sanzo.demo3 <- function() {
 #' their use and display hexadecimal values.
 #'
 #' @examples
+#' 
 #' sanzo.demo4()
 #'
 #' @export
@@ -397,11 +388,6 @@ sanzo.demo4 <- function() {
                 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4)
 
   df_scatter <- data.frame(value, category)
-
-  # Set up layout.
-
-  graphics::layout(matrix(1:4, nrow = 2))
-  graphics::par(mar = c(2, 2, 2, 2))
 
   # Print demo plots.
 
