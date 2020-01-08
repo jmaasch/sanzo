@@ -53,6 +53,7 @@ Each color combination can be demo'd via base R scatter and bar plots. To view t
 **[Full suite](#full-suite):** [Duo palettes.](#duo-palettes) | [Trio palettes.](#trio-palettes) | [Quad palettes.](#quad-palettes)
 
 ```R
+
 # Print demo plots for duos.
 sanzo.demo2()
 
@@ -64,6 +65,16 @@ sanzo.demo4()
 
 # Print demo plots for all palettes.
 sanzo.demo.all()
+```
+
+*Optional*: for easier viewing, try gridding up prior to running ```sanzo.demo``` functions. **NOTE:** this will alter par settings.
+
+```R
+
+# Set up gridded layout, if desired:
+graphics::layout(matrix(1:4, nrow = 2))
+graphics::par(mar = c(2, 2, 2, 2))
+
 ```
 
 ### Use with base R.
