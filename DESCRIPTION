@@ -1,16 +1,17 @@
 Package: sanzo
 Title: Color Palettes Based on the Works of Sanzo Wada
 Version: 0.1.0
-Authors@R: c(
+Authors@R:
     person(given = "Jacqueline",
            family = "Maasch",
            role = c("aut", "cre"),
            email = "jacqueline.maasch@gmail.com")
-Description: Inspired by the art and color research of Sanzo Wada, his 
-    Dictionary Of Color Combinations, and the incredible interactive site
-    by Dain M. Blodorn Kim, this package brings Wada's color combinations
-    to R for easy use in data visualizations. This package honors 60 of 
-    Wada's color combinations: 20 duos, 20 trios, and 20 quads.
+Description: Inspired by the art and color research of Sanzo Wada (1883-1967), 
+    his Dictionary Of Color Combinations (2011, ISBN:978-4861522475), and the 
+    incredible interactive site by Dain M. Blodorn Kim <https://github.com/dblodorn/sanzo-wada>, 
+    this package brings Wada's color combinations to R for easy use in data 
+    visualizations. This package honors 60 of Wada's color combinations: 
+    20 duos, 20 trios, and 20 quads.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
