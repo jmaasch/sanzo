@@ -5,13 +5,7 @@ Authors@R: c(
     person(given = "Jacqueline",
            family = "Maasch",
            role = c("aut", "cre"),
-           email = "jacqueline.maasch@gmail.com"),
-    person(given = "Dain",
-           family = "Blodorn Kim",
-           role = c("art", "aut")),
-    person(given = "Sanzo",
-           family = "Wada",
-           role = c("art")))
+           email = "jacqueline.maasch@gmail.com")
 Description: Inspired by the art and color research of Sanzo Wada, his 
     Dictionary Of Color Combinations, and the incredible interactive site
     by Dain M. Blodorn Kim, this package brings Wada's color combinations
