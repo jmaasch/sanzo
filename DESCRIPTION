@@ -8,7 +8,7 @@ Authors@R:
            email = "jacqueline.maasch@gmail.com")
 Description: Inspired by the art and color research of Sanzo Wada (1883-1967), 
     his Dictionary Of Color Combinations (2011, ISBN:978-4861522475), and the 
-    incredible interactive site by Dain M. Blodorn Kim <https://github.com/dblodorn/sanzo-wada>, 
+    interactive site by Dain M. Blodorn Kim <https://github.com/dblodorn/sanzo-wada>, 
     this package brings Wada's color combinations to R for easy use in data 
     visualizations. This package honors 60 of Wada's color combinations: 
     20 duos, 20 trios, and 20 quads.
