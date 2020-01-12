@@ -30,7 +30,10 @@ This package is licensed under the GNU General Public License v3.0 (<a href="htt
 ### Installation.
 
 ```R
-# Install package. Prior, the package devtools must be installed but need not be loaded.
+# Install from CRAN (recommended).
+install.packages("sanzo")
+
+# Alternatively, install development version (devtools must be installed but need not be loaded).
 devtools::install_github("jmaasch/sanzo")
 
 # Load package.
@@ -132,14 +135,17 @@ print(sanzo.info2())
 knitr::kable(sanzo.info2())
 ```
 
-Duo, trio, and quad data are stored in exported lists. To quickly access palette names only:
+Duo, trio, and quad data are stored in exported lists. To quickly access palette names or hexadecimals only:
 
 ```R
+# Access palette names.
 names(duos)
 names(trios)
 names(quads)
-```
 
+# Print hex values for a given palette to the console (example output = [1] "#ff616b" "#000831")
+sanzo.duo("c006")
+```
 
 <img src="https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/concat.png" width="500" align="right"/>
 
