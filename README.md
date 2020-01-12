@@ -33,7 +33,8 @@ This package is licensed under the GNU General Public License v3.0 (<a href="htt
 # Install from CRAN (recommended).
 install.packages("sanzo")
 
-# Alternatively, install development version (devtools must be installed but need not be loaded).
+# Alternatively, install development version.
+# Note: the package devtools must be installed but need not be loaded.
 devtools::install_github("jmaasch/sanzo")
 
 # Load package.
@@ -143,7 +144,8 @@ names(duos)
 names(trios)
 names(quads)
 
-# Print hex values for a given palette to the console (example output = [1] "#ff616b" "#000831")
+# Print hex values for a given palette to the console.
+# Example output = [1] "#ff616b" "#000831"
 sanzo.duo("c006")
 ```
 
