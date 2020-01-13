@@ -10,7 +10,7 @@ An R package by JRMA Maasch (2019).
 
 1. **[About](#about):** Origins and inspirations.
 2. **[Usage](#usage):** &nbsp; [Install.](#installation) &nbsp; | &nbsp; [Docs.](#view-documentation) &nbsp; | &nbsp; [Demo.](#view-palette-demos-using-sanzodemo-functions) &nbsp; | &nbsp; [Base R.](#use-with-base-R) &nbsp; | &nbsp; [ggplot2.](#use-with-ggplot2) &nbsp; | &nbsp; [Gradient.](#use-as-a-continuous-color-palette) &nbsp; | &nbsp; [Metadata.](#access-palette-metadata-with-sanzoinfo-functions) &nbsp; | &nbsp; [Customize.](#customize)
-3. **[ggplot2 gallery](#ggplot2-gallery):** &nbsp; [Scatter plots.](#scatter-plots) &nbsp; | [&nbsp; Bar plots.](#bar-plots) &nbsp; | &nbsp; [Violin plots.](#violin-plots) &nbsp; | &nbsp; [2D Density plots.](#gradient) &nbsp;
+3. **[ggplot2 gallery](#ggplot2-gallery):** &nbsp; [Scatter plots.](#scatter-plots) &nbsp; | [&nbsp; Bar plots.](#bar-plots) &nbsp; | &nbsp; [Violin plots.](#violin-plots) &nbsp; | &nbsp; [2D Density plots.](#2D-Density-plots) &nbsp;
 4. **[View full suite](#view-full-suite):** &nbsp; [Duo palettes.](#duo-palettes) &nbsp; | &nbsp; [Trio palettes.](#trio-palettes) &nbsp; | &nbsp; [Quad palettes.](#quad-palettes)
 
 # About
