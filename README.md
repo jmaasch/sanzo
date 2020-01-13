@@ -3,6 +3,8 @@
 # Color Palettes Based on the Works of Sanzo Wada
 An R package by JRMA Maasch (2019).
 
+<a href="https://CRAN.R-project.org/package=sanzo" target="_blank">View on CRAN.</a>
+
 <img src="https://github.com/jmaasch/sanzo/blob/master/dev/sanzo_dictionary/sanzo_amazon1.jpg" width="410" align="right"/>
 <img src="https://github.com/jmaasch/sanzo/blob/master/dev/sanzo_dictionary/sanzo1.jpg" width="410" align="right"/>
 
