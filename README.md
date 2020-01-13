@@ -182,7 +182,9 @@ Many of the plots in this gallery additionally use the ```ggthemes``` and ```cow
 
 ### Violin plots.
 
+<p align="center">   
 <img src="https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/violin.png" width="750" align="middle"/>
+</p>
 
 ### Bar plots.
 
@@ -190,7 +192,7 @@ Many of the plots in this gallery additionally use the ```ggthemes``` and ```cow
 |:-------------------------:|:-------------------------:|
 |![bar1](https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/bar_ggplot2.png)|![bar2](https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/bar_stacked_ggplot2.png)|
 
-### Gradient.
+### 2D Density plots.
 
 <img src="https://github.com/jmaasch/sanzo/blob/master/dev/ggplot2demos/gradient.png" align="middle"/>
 
