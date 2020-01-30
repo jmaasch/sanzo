@@ -53,7 +53,7 @@ View this <a href="http://rpubs.com/razel/sanzo_vignette" target="_blank">vignet
 ?sanzo.trio()
 ```
 
-### View palette demos using ```sanzo.demo``` functions.
+### View palette demos using ```sanzo.demo*``` functions.
 
 Each color combination can be demo'd via base R scatter and bar plots. To view the output of these functions, see 
 **[Full suite](#full-suite):** [Duo palettes.](#duo-palettes) | [Trio palettes.](#trio-palettes) | [Quad palettes.](#quad-palettes)
@@ -73,7 +73,7 @@ sanzo.demo4()
 sanzo.demo.all()
 ```
 
-*Optional*: for easier viewing, try gridding up prior to running ```sanzo.demo``` functions. **NOTE:** This will alter ```par``` settings.
+*Optional*: for easier viewing, try gridding up prior to running ```sanzo.demo*``` functions. **NOTE:** This will alter ```par``` settings.
 
 ```R
 
@@ -120,7 +120,7 @@ ggplot(faithfuld, aes(waiting, eruptions)) +
    scale_fill_gradientn(colors = sanzo.duo("c102")) 
 ```
 
-### Access palette metadata with ```sanzo.info``` functions.
+### Access palette metadata with ```sanzo.info*``` functions.
 
 These functions return a data frame containing long-form names, short-form IDs, hexadecimal values, and links to Dain M. Blodorn Kim's https://sanzo-wada.dmbk.io for further information.
 
@@ -155,7 +155,7 @@ sanzo.duo("c006")
 
 ### Customize.
 
-Concatenate multiple palettes to make a custom palette or cherry-pick individual colors. All hexadecimals are provided by the ```sanzo.demo``` functions and ```sanzo.info``` functions.
+Concatenate multiple palettes to make a custom palette or cherry-pick individual colors. All hexadecimals are provided by the ```sanzo.demo*``` functions and ```sanzo.info*``` functions.
 
  ```R
 c033 <- sanzo.duo("c033")
