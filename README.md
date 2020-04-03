@@ -6,6 +6,8 @@ An R package by JRMA Maasch (2019). <a href="https://CRAN.R-project.org/package=
 <img src="https://github.com/jmaasch/sanzo/blob/master/dev/sanzo_dictionary/sanzo_amazon1.jpg" width="415" align="left"/>
 <img src="https://github.com/jmaasch/sanzo/blob/master/dev/sanzo_dictionary/sanzo1.jpg" width="415" align="right"/>
 
+-
+
 ### Table of contents
 
 1. **[About](#about):** Origins and inspirations.
